@@ -1,0 +1,52 @@
+version: "3.1"
+
+stories:
+
+- story: greet and ask for language
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_language
+
+- story: user chooses bahasa melayu
+  steps:
+  - intent: choose_lang_bm
+  - action: utter_selected_bm
+  
+  
+
+- story: user chooses english
+  steps:
+  - intent: choose_lang_en
+  - action: utter_selected_en
+  
+
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
