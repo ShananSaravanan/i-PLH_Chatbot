@@ -10,8 +10,79 @@ intents:
 - greet
 - mood_great
 - mood_unhappy
-entities:
-- language
+- maklumat_umum
+- penyelidikan
+- rujukan
+- general_info
+- research
+- reference
+- dress
+- wifi_en
+- operating
+- account
+- membership
+- loan_return
+- fine_lost
+- interlibrary
+- postal_book_loan
+- order_collect
+- book_suggestion
+- ebook_suggestion
+- book_donation
+- repo_ir_en
+- collection_digital
+- memory_korporat
+- pakaian
+- wifi_bm
+- waktu
+- akaun
+- keahlian
+- pinjam_pulang
+- denda_hilang
+- pinjam_antara
+- pinjam_pos
+- tempah_ambil
+- cadangan_buku
+- cadangan_buku_digital
+- sumbangan_buku
+- repo_ir_bm
+- koleksi_digital
+- memori_korporat
+- fungsi_akaun
+- cara_akaun
+- function_account
+- ways_account
+- keahlian_UTeM
+- orang_luar
+- member_UTeM
+- visitor_member
+- book_borrowing_quantity
+- online_book_loan_renewal
+- renew_book_loan
+- unsuccessful_book_loan_renewal
+- book_return_place
+- borrowing_without_card
+- jumlah_buku_yang_boleh_dipinjam
+- memperbaharui_tempoh_pinjaman_atas_talian
+- perbaharui_pinjaman_buku
+- tidak_berjaya_memperbaharui_pinjaman_buku
+- tempat_pulangan_buku
+- pinjaman_tanpa_kad_pelajar
+- book_loan_overdue
+- cash_payment_fine
+- report_loss_book
+- loan_material_lost
+- tunggakan_pinjaman_buku
+- pembayaran_tunai_denda
+- cara_kehilangan_buku
+- pinjaman_buku_hilang
+- obtain_book_article
+- type_of_materials
+- cara_mendapatkan_buku
+- jenis_bahan
+
+#entities:
+#- language
 # slots:
 #   language:
 #     type: text
@@ -20,11 +91,9 @@ entities:
 #       - type: from_entity
 #         entity: language
 responses:
-  utter_greet:
-  - text: Hi, my name is LISA, UTeM's library service assistant
   
   utter_ask_language:
-  - text: "Please select your preferred language:"
+  - text: "Hi, my name is LISA, UTeM's library service assistant, Please select your preferred language:"
     buttons:
     - title: "Bahasa Melayu"
       payload: '/choose_lang_bm'
@@ -34,13 +103,380 @@ responses:
   utter_selected_bm:
   - text: "Anda telah memilih Bahasa Melayu. Bagaimana saya boleh membantu?"
     buttons:
-    - title: "Bahasa Melayu"
-      payload: '/choose_lang_bm'
-    - title: "English"
-      payload: '/choose_lang_en'
+    - title: "Maklumat umum"
+      payload: '/maklumat_umum'
+    - title: "Penyelidikan"
+      payload: '/penyelidikan'
+    - title: "Rujukan"
+      payload: '/rujukan'
 
   utter_selected_en:
   - text: "You have selected English. How can I assist you?"
+    buttons:
+    - title: "General information"
+      payload: '/general_info'
+    - title: "Research"
+      payload: '/research'
+    - title: "Reference"
+      payload: '/reference'
+#General Info
+  utter_general_info:
+  - text: "What kind of general information are you finding for?"
+    buttons:
+    - title: "Dress Code"
+      payload: '/dress'
+    - title: "Wi-Fi Service"
+      payload: '/wifi_en'
+    - title: "Operating Hours"
+      payload: '/operating'
+    - title: "Account"
+      payload: '/account'
+    - title: "Library Membership"
+      payload: '/membership'
+    - title: "Loaning and Returning"
+      payload: '/loan_return'
+    - title: "Fine and Lost Book"
+      payload: '/fine_lost'
+    - title: "Interlibrary Loan"
+      payload: '/interlibrary'
+    - title: "Postal Book Loan"
+      payload: '/postal_book_loan'
+    - title: "Order and Collect"
+      payload: '/order_collect'
+    - title: "Book Suggestion"
+      payload: '/book_suggestion'
+    - title: "E-Book Suggestion"
+      payload: '/ebook_suggestion'
+    - title: "Book Donation"
+      payload: '/book_donation'
+    - title: "Repository IR UTeM"
+      payload: '/repo_ir_en'
+    - title: "Digital Collection UTeM"
+      payload: '/collection_digital'
+    - title: "Corporate Memory UTeM"
+      payload: '/memory_korporat'
+  
+  utter_maklumat_umum:
+  - text: "Apakah maklumat umum yang sedang anda mencari?"
+    buttons:
+    - title: "Etika Pakaian"
+      payload: '/pakaian'
+    - title: "Perkhidmatan Wi-Fi"
+      payload: '/wifi_bm'
+    - title: "Waktu Perkhidmatan"
+      payload: '/waktu'
+    - title: "Akaun"
+      payload: '/akaun'
+    - title: "Keahlian Perpustakaan"
+      payload: '/keahlian'
+    - title: "Pinjaman dan Pulangan Buku"
+      payload: '/pinjam_pulang'
+    - title: "Denda dan Kehilangan Buku"
+      payload: '/denda_hilang'
+    - title: "Pinjaman antara Perpustakaan"
+      payload: '/pinjam_antara'
+    - title: "Pinjaman secara Pos"
+      payload: '/pinjam_pos'
+    - title: "Tempah dan Ambil"
+      payload: '/tempah_ambil'
+    - title: "Cadangan Buku"
+      payload: '/cadangan_buku'
+    - title: "Cadangan Buku Digital"
+      payload: '/cadangan_buku_digital'
+    - title: "Sumbangan Buku"
+      payload: '/sumbangan_buku'
+    - title: "Repositori IR UTeM"
+      payload: '/repo_ir_bm'
+    - title: "Koleksi Digital UTeM"
+      payload: '/koleksi_digital'
+    - title: "Memori Korporat UTeM"
+      payload: '/memori_korporat'
+
+#Dress
+  utter_pakaian:
+  - text: 'Pengguna perpustakaan harus mematuhi etika kod pakaian universiti. Sila [klik di sini](https://library.utem.edu.my/en/rules/dressing-code.html) untuk butiran lanjut'
+  utter_dress:
+  - text: 'Library users should follow the university dress code etiquette. Please [click here](https://library.utem.edu.my/en/rules/dressing-code.html) for more details'
+#Wifi
+  utter_wifi_bm:
+  - text: Kemudahan Wi-Fi disediakan secara percuma.
+  utter_wifi_en:
+  - text: Wi-Fi facility is provided at no charge. Please refer to the wireless user guide.
+#Operating hours
+  utter_waktu:
+  - text: 'Untuk mengetahui waktu perkhidmatan perpustakaan, sila [klik di sini](https://library.utem.edu.my/en/rules/library-hours.html) untuk butiran lanjut.'
+  utter_operating_hours:
+  - text: 'To view the hours of library service, please [click here](https://library.utem.edu.my/en/rules/library-hours.html) for more details.'
+#Account
+  utter_akaun:
+  - text: "Apakah maklumat berkenaan dengan akaun yang sedang anda mencari?"
+    buttons:
+    - title: "Cara mendapatkan Akaun Perpustakaan"
+      payload: '/cara_akaun' 
+    - title: "Fungsi Akaun Perpustakaan"
+      payload: '/fungsi_akaun'
+  utter_account:
+  - text: "What kind of account information are you finding for?"
+    buttons:
+    - title: "Getting a Library Account"
+      payload: '/ways_account' 
+    - title: "Functions of Library Account"
+      payload: '/function_account'
+  utter_cara_akaun:
+  - text: "Anda layak untuk memiliki akaun pengguna jika anda pelajar atau kakitangan UTeM berdaftar." 
+  utter_ways_account:
+  - text: "You are eligible to have a user account if you are a registered UTeM student or staff."
+  utter_fungsi_akaun:
+  - text: "Dengan mempunyai akaun pengguna, anda boleh menyemak butiran peminjaman, denda, tempahan dan status semasa pengguna. Anda juga boleh menukar kata laluan anda dan memperbaharui pinjaman anda." 
+  utter_function_account:
+  - text: "By having a user account, you can check details of borrowing, fines, reservation and user current status. You could also change your password and renew your loan."
+#Membership account
+  utter_keahlian:
+  - text: "Apakah maklumat berkenaan dengan keahlian yang sedang anda mencari?"
+    buttons:
+    - title: "Keahlian Kakitangan dan Pelajar UTeM"
+      payload: '/keahlian_UTeM' 
+    - title: "Keahlian Orang Luar"
+      payload: '/orang_luar'
+  utter_membership:
+  - text: "What kind of membership information are you finding for?"
+    buttons:
+    - title: "UTeM Staffs and Students Membership"
+      payload: '/member_UTeM' 
+    - title: "Visitor Membership"
+      payload: '/visitor_member'
+
+  utter_member_UTeM:
+  - text: "UTeM staff and students are automatically members of the library. For further information, please contact the Circulation Counter at 06-2701200 during office hours."
+        
+  utter_visitor_UTeM:
+  - text: "Yes. Individuals who are not UTeM students or staff can apply to become library members at the Circulation Counter during office hours. For more information, please refer to the Library Membership link."
+
+  utter_keahlian_UTeM:
+  - text: "Kakitangan dan pelajar UTeM secara automatik adalah ahli perpustakaan. Untuk maklumat lanjut, sila hubungi Kaunter Sirkulasi di talian 06-2701200 pada waktu pejabat."
+        
+  utter_orang_luar:
+  - text: "Individu bukan pelajar atau kakitangan UTeM boleh memohon untuk menjadi ahli perpustakaan di Kaunter Sirkulasi pada waktu pejabat atau menggunakan borang permohonan keahlian secara dalam talian. Untuk maklumat lanjut, sila rujuk pautan [Keahlian Perpustakaan](https://library.utem.edu.my/en/guides/membership.html)."
+  
+#Borrowing & Returning
+  utter_loan_return:
+  - text: "What kind of loan & return information are you looking for?"
+    buttons:
+    - title: "Book Borrowing Quantity"
+      payload: "/book_borrowing_quantity"
+    - title: "Online Book Loan Renewal"
+      payload: "/online_book_loan_renewal"
+    - title: "Renew Book Loan"
+      payload: "/renew_book_loan"
+    - title: "Unsuccessful Book Loan Renewal"
+      payload: "/unsuccessful_book_loan_renewal"
+    - title: "Book Return Place"
+      payload: "/book_return_place"
+    - title: "Borrowing without student/staff card"
+      payload: "/borrowing_without_card"
+  utter_book_borrowing_quantity:
+  - text: "Eligibility differs depending on the user category. Please [click here](https://library.utem.edu.my/en/rules/loan-eligibility.html) for more details."
+
+  utter_online_book_loan_renewal:
+  - text: |
+      1. Log in to User Account through portal library.
+      2. Click on "On-loan Item" and choose the book from the list of borrowed books.
+      3. Click on "Renew" at the bottom of borrowed list.
+
+  utter_renew_book_loan:
+  - text: "Borrowed book can be renewed online 2 times and can be done before or on the due date."
+
+  utter_unsuccessful_book_loan_renewal:
+  - text: |
+      Loan renewal is not successful because:
+      1. The loan period has expired.
+      2. The book has been reserved by another user.
+      3. Users have fines.
+      The maximum limit of online renewal of 2 times has been done.
+
+  utter_book_return_place:
+  - text: |
+      You can return the book at the Circulation Counter or at the Book Drop Machine outside the library.
+      When the library is closed, you can use this Book Drop Machine to return the book.
+
+  utter_borrowing_without_card:
+  - text: "No, you cannot."
+
+  utter_pinjam_pulang:
+  - text: "Apakah maklumat berkenaan dengan pinjaman & pulangan yang sedang anda mencari?"
+    buttons:
+    - title: "Jumlah Buku yang Boleh Dipinjam"
+      payload: "/jumlah_buku_yang_boleh_dipinjam"
+    - title: "Memperbaharui Tempoh Pinjaman Atas Talian"
+      payload: "/memperbaharui_tempoh_pinjaman_atas_talian"
+    - title: "Perbaharui Pinjaman Buku"
+      payload: "/perbaharui_pinjaman_buku"
+    - title: "Tidak Berjaya Memperbaharui Pinjaman Buku"
+      payload: "/tidak_berjaya_memperbaharui_pinjaman_buku"
+    - title: "Tempat Pulangan Buku"
+      payload: "/tempat_pulangan_buku"
+    - title: "Pinjaman tanpa Kad Pelajar"
+      payload: "/pinjaman_tanpa_kad_pelajar"
+
+  utter_jumlah_buku_yang_boleh_dipinjam:
+  - text: "Kelayakan pinjaman adalah berbeza mengikut kategori pengguna. Sila [klik di sini](https://library.utem.edu.my/en/rules/loan-eligibility.html) untuk butiran lanjut."
+
+  utter_memperbaharui_tempoh_pinjaman_atas_talian:
+  - text: |
+      1. Akses Akaun Pengguna melalui laman web Perpustakaan.
+      2. Klik pada "On-loan Item" dan pilih buku yang ingin diperbaharui dari senarai pinjaman.
+      3. Klik pada menu "Renew" di bawah senarai pinjaman.
+
+  utter_perbaharui_pinjaman_buku:
+  - text: "Buku yang dipinjam boleh diperbaharui secara dalam talian sebanyak 2 kali dan boleh dilakukan sebelum atau pada tarikh akhir pinjaman."
+
+  utter_tidak_berjaya_memperbaharui_pinjaman_buku:
+  - text: |
+      Pembaharuan pinjaman tidak berjaya kerana:
+      1. Tempoh pinjaman telah tamat.
+      2. Buku tersebut telah ditempah oleh pengguna lain.
+      3. Pengguna mempunyai denda.
+      4. Had maksimum pembaharuan secara dalam talian sebanyak 2 kali telah dipenuhi.
+
+  utter_tempat_pulangan_buku:
+  - text: |
+      Anda boleh memulangkan buku di Kaunter Sirkulasi atau di Mesin Pemulangan Layan Diri yang terletak di luar perpustakaan.
+      Mesin Pemulangan Layan Diri ini juga boleh digunakan untuk memulangkan buku pada waktu perkhidmatan perpustakaan ditutup.
+
+  utter_pinjaman_tanpa_kad_pelajar:
+  - text: "Tidak, anda tidak boleh meminjam tanpa kad pelajar/staf."
+
+#Fine $ Lost
+  utter_fine_lost:
+  - text: "What information about fines or lost books would you like to know?"
+    buttons:
+    - title: "Book Loan Overdue"
+      payload: "/book_loan_overdue"
+    - title: "Cash Payment for Fine"
+      payload: "/cash_payment_fine"
+    - title: "Reporting Loss of Book"
+      payload: "/report_loss_book"
+    - title: "Loan Material Lost"
+      payload: "/loan_material_lost"
+
+  utter_denda_hilang:
+  - text: "Apakah maklumat berkenaan dengan denda dan kehilangan yang sedang anda mencari?"
+    buttons:
+    - title: "Tungakkan Pinjaman Buku"
+      payload: "/tunggakan_pinjaman_buku"
+    - title: "Pembayaran Tunai untuk Denda"
+      payload: "/pembayaran_tunai_denda"
+    - title: "Cara Menguruskan Kehilangan Buku"
+      payload: "/cara_kehilangan_buku"
+    - title: "Pinjaman Buku Hilang"
+      payload: "/pinjaman_buku_hilang"
+
+  utter_book_loan_overdue:
+  - text: |
+      When books on loan are not returned by the due date, users will be fined according to the following rates.
+      Please [click here](https://library.utem.edu.my/en/rules/fine-rates.html) for more details.
+
+  utter_cash_payment_fine:
+  - text: |
+      You can't. The library has implemented cashless payments for all paid services and fines.
+  
+  utter_report_loss_book:
+  - text: |
+      Please refer to Circulation Counter. For further information, please contact the Circulation Counter at 06-2701200 during office hours.
+  
+  utter_loan_material_lost:
+  - text: |
+      1. Please inform the Circulation Counter immediately to avoid more fines for late return.
+      2. Borrowers will be given two (2) weeks to search for the items. If the items are still missing, the borrowers have three (3) options as follows:
+      - Replace with the latest edition of the book (consult the Librarian) and the RM25.00 processing fee will be exempted.
+      - Pay the price of the latest edition of the book, RM25.00 processing fee, and any fines (if any).
+      - If the price of an old library collection material is unavailable, locally published materials will be charged RM40.00 while internationally published materials will be charged RM150.00, along with the processing fee.
+
+  utter_tunggakan_pinjaman_buku:
+  - text: |
+      Apabila buku yang dipinjam tidak dikembalikan pada tarikh akhir, pengguna akan dikenakan denda mengikut kadar berikut. 
+      Sila [klik di sini](https://library.utem.edu.my/en/rules/fine-rates.html) untuk butiran lanjut.
+  
+  utter_pembayaran_tunai_denda:
+  - text: |
+      Tidak boleh. Perpustakaan telah melaksanakan pembayaran tanpa tunai untuk semua perkhidmatan berbayar dan denda.
+
+  utter_cara_kehilangan_buku:
+  - text: |
+      Sila berurusan di Kaunter Sirkulasi. Untuk maklumat lanjut, sila hubungi Kaunter Sirkulasi di talian 06-2701200 pada waktu pejabat.
+
+  utter_pinjaman_buku_hilang:
+  - text: |
+      1. Sila maklumkan kepada Kaunter Sirkulasi dengan segera bagi mengelak denda yang lebih tinggi kerana pulang lewat.
+      2. Peminjam akan diberi masa dua (2) minggu untuk mencari barang tersebut. Sekiranya barang masih hilang, peminjam mempunyai tiga (3) pilihan seperti berikut:
+      - Gantikan dengan edisi terkini buku (rujuk Pustakawan) dan yuran pemprosesan RM25.00 akan dikecualikan.
+      - Bayar harga buku edisi terkini, yuran pemprosesan RM25.00 dan denda (jika ada).
+      - Jika harga bahan tiada, bahan terbitan tempatan akan dikenakan bayaran RM40.00 manakala bahan terbitan antarabangsa akan dikenakan bayaran RM150.00 dan yuran pemprosesan.
+
+#Interlibrary
+  utter_interlibrary:
+  - text: |
+      You can obtain a book or article not available in our library through the Interlibrary Loan Service. Please select the option below to learn more:
+    buttons:
+    - title: "How to obtain a book or article"
+      payload: /obtain_book_article
+    - title: "Types of materials you can request"
+      payload: /type_of_materials
+
+  utter_pinjam_antara:
+  - text: |
+      Anda boleh mendapatkan buku atau artikel yang tiada di perpustakaan melalui Perkhidmatan Pinjaman Antara Perpustakaan. Sila pilih pilihan di bawah untuk mengetahui lebih lanjut:
+    buttons:
+    - title: "Cara mendapatkan buku atau artikel"
+      payload: /cara_mendapatkan_buku
+    - title: "Jenis bahan yang boleh diminta"
+      payload: /jenis_bahan
+
+  utter_obtain_book_article:
+  - text: |
+      You can use the [Interlibrary Loan Service](https://docs.google.com/forms/d/e/1FAIpQLSd4zp2abZ3FSggwCrTIJa3u9qTR7jrUKTtpnNXVQeOUOIn_uw/viewform).
+  
+  utter_type_of_materials:
+  - text: |
+      You may request book chapters, conference papers, journal articles, and books. However, it is subject to the lending policy of the library that provides this service.
+
+  utter_cara_mendapatkan_buku:
+  - text: |
+      Anda boleh menggunakan perkhidmatan [Sistem Pembekalan Penerbitan](https://docs.google.com/forms/d/e/1FAIpQLSd4zp2abZ3FSggwCrTIJa3u9qTR7jrUKTtpnNXVQeOUOIn_uw/viewform).
+
+  utter_jenis_bahan:
+  - text: |
+      Anda boleh memohon bab dalam buku, kertas persidangan, artikel jurnal dan juga buku. Walau bagaimanapun, ia tertakluk kepada polisi perpustakaan yang memberi perkhidmatan ini.
+
+#Postal Book Loan
+  utter_postal_book_loan:
+  - text: |
+      1. Users can only request a maximum of 3 books per transaction.
+      2. Only books (open shelf) with ‘available’ status can be loaned.
+      3. Please email your request to bookrequest@utem.edu.my with the following details:
+        - Title
+        - Call Number
+        - Author
+      4. You will get an additional 14-day loan period beyond your original eligibility.
+      5. Delivery of books will be handled by courier using cash-on-delivery (COD) method, and payment should be made by the requester.
+        Books can only be posted locally (no overseas shipping).
+  utter_pinjam_pos:
+  - text: |
+      1. Maksimum 3 buku bagi setiap transaksi.
+      2. Bahan kategori “Open Shelf” dan berstatus “Available” sahaja yang boleh dipinjam.
+      3. Permohonan boleh di e-mel ke bookrequest@utem.edu.my berserta maklumat lengkap:
+         - Judul buku
+         - Nombor panggilan
+         - Nama pengarang
+      4. Dapatkan tambahan tempoh pinjaman 14 hari daripada kelayakan asal pengguna.
+      5. Penghantaran buku akan dikendalikan melalui kurier menggunakan kaedah tunai semasa penghantaran (COD) dan pembayaran perlu dibuat oleh pemohon.
+         Buku hanya boleh dihantar secara pos di dalam negara (tiada penghantaran ke luar negara).
+
+
+
+
+  
+  
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
     image: https://i.imgur.com/nGF1K8f.jpg
@@ -57,10 +493,4 @@ responses:
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-actions:
-- utter_greet
-- utter_selected_bm
-- utter_debug
-- utter_selected_en
-- utter_ask_language
-- action_ask_language
+

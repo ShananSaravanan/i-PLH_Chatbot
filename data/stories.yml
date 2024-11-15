@@ -1,52 +1,328 @@
 version: "3.1"
 
 stories:
-
+#Start
 - story: greet and ask for language
   steps:
   - intent: greet
-  - action: utter_greet
   - action: utter_ask_language
 
+#Language
 - story: user chooses bahasa melayu
   steps:
   - intent: choose_lang_bm
   - action: utter_selected_bm
   
-  
-
 - story: user chooses english
   steps:
   - intent: choose_lang_en
   - action: utter_selected_en
+
+#First Categories
+#General
+- story: general info
+  steps:
+  - intent: general_info
+  - action: utter_general_info
   
-
-
-- story: happy path
+- story: maklumat umum
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: maklumat_umum
+  - action: utter_maklumat_umum
 
-- story: sad path 1
+#Dress Code
+- story: dress code
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: dress
+  - action: utter_dress
+- story: etika pakaian
+  steps:
+  - intent: pakaian
+  - action: utter_pakaian
 
-- story: sad path 2
+#Wifi
+- story: wifi english
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: wifi_en
+  - action: utter_wifi_en
+- story: wifi bm
+  steps:
+  - intent: wifi_bm
+  - action: utter_wifi_bm
+
+#Operating hours
+- story: operating hours
+  steps:
+  - intent: operating
+  - action: utter_operating_hours
+- story: waktu perkhidmatan
+  steps:
+  - intent: waktu
+  - action: utter_waktu
+#Account
+- story: account
+  steps:
+  - intent: account
+  - action: utter_account
+- story: akaun
+  steps:
+  - intent: akaun
+  - action: utter_akaun
+- story: cara akaun
+  steps:
+  - intent: cara_akaun
+  - action: utter_cara_akaun
+- story: account ways
+  steps:
+  - intent: ways_account
+  - action: utter_ways_account
+- story: fungsi akaun
+  steps:
+  - intent: fungsi_akaun
+  - action: utter_fungsi_akaun
+- story: account function
+  steps:
+  - intent: function_account
+  - action: utter_function_account
+#Membership
+- story: keahlian
+  steps:
+  - intent: keahlian
+  - action: utter_keahlian
+
+- story: membership 
+  steps:
+  - intent: membership
+  - action: utter_membership
+
+- story: pengguna bertanya bagaimana untuk memohon keahlian perpustakaan (kakitangan/pelajar UTeM)
+  steps:
+  - intent: keahlian_UTeM
+  - action: utter_keahlian_UTeM
+
+- story: pengguna bertanya bagaimana individu bukan UTeM boleh memohon keahlian perpustakaan
+  steps:
+  - intent: orang_luar
+  - action: utter_orang_luar
+
+- story: user asks how to apply for library membership (UTeM staff/students)
+  steps:
+  - intent: member_UTeM
+  - action: utter_member_UTeM
+
+- story: user asks how non-UTeM individuals can apply for library membership
+  steps:
+  - intent: visitor_member
+  - action: utter_visitor_UTeM
+
+#Book Loan $ Return
+- story: loan return
+  steps:
+  - intent: loan_return
+  - action: utter_loan_return
+
+- story: pinjam pulang
+  steps:
+  - intent: pinjam_pulang
+  - action: utter_pinjam_pulang
+
+- story: book_borrowing_quantity
+  steps:
+  - intent: book_borrowing_quantity
+  - action: utter_book_borrowing_quantity
+
+- story: online_book_loan_renewal
+  steps:
+  - intent: online_book_loan_renewal
+  - action: utter_online_book_loan_renewal
+
+- story: renew_book_loan
+  steps:
+  - intent: renew_book_loan
+  - action: utter_renew_book_loan
+
+- story: unsuccessful_book_loan_renewal
+  steps:
+  - intent: unsuccessful_book_loan_renewal
+  - action: utter_unsuccessful_book_loan_renewal
+
+- story: book_return_place
+  steps:
+  - intent: book_return_place
+  - action: utter_book_return_place
+
+- story: borrowing_without_card
+  steps:
+  - intent: borrowing_without_card
+  - action: utter_borrowing_without_card
+
+- story: jumlah_buku_yang_boleh_dipinjam
+  steps:
+  - intent: jumlah_buku_yang_boleh_dipinjam
+  - action: utter_jumlah_buku_yang_boleh_dipinjam
+
+- story: memperbaharui_tempoh_pinjaman_atas_talian
+  steps:
+  - intent: memperbaharui_tempoh_pinjaman_atas_talian
+  - action: utter_memperbaharui_tempoh_pinjaman_atas_talian
+
+- story: perbaharui_pinjaman_buku
+  steps:
+  - intent: perbaharui_pinjaman_buku
+  - action: utter_perbaharui_pinjaman_buku
+
+- story: tidak_berjaya_memperbaharui_pinjaman_buku
+  steps:
+  - intent: tidak_berjaya_memperbaharui_pinjaman_buku
+  - action: utter_tidak_berjaya_memperbaharui_pinjaman_buku
+
+- story: tempat_pulangan_buku
+  steps:
+  - intent: tempat_pulangan_buku
+  - action: utter_tempat_pulangan_buku
+
+- story: pinjaman_tanpa_kad_pelajar
+  steps:
+  - intent: pinjaman_tanpa_kad_pelajar
+  - action: utter_pinjaman_tanpa_kad_pelajar
+
+#Fine & Lost
+- story: fine_lost
+  steps:
+  - intent: fine_lost
+  - action: utter_fine_lost
+
+- story: denda_hilang
+  steps:
+  - intent: denda_hilang
+  - action: utter_denda_hilang
+
+- story: book_loan_overdue
+  steps:
+  - intent: book_loan_overdue
+  - action: utter_book_loan_overdue
+
+- story: cash_payment_fine
+  steps:
+  - intent: cash_payment_fine
+  - action: utter_cash_payment_fine
+- story: report_loss_book
+  steps:
+  - intent: report_loss_book
+  - action: utter_report_loss_book
+- story: loan_material_lost
+  steps:
+  - intent: loan_material_lost
+  - action: utter_loan_material_lost
+- story: tunggakan_pinjaman_buku
+  steps:
+  - intent: tunggakan_pinjaman_buku
+  - action: utter_tunggakan_pinjaman_buku
+- story: pembayaran_tunai_denda
+  steps:
+  - intent: pembayaran_tunai_denda
+  - action: utter_pembayaran_tunai_denda
+- story: cara_kehilangan_buku
+  steps:
+  - intent: cara_kehilangan_buku
+  - action: utter_cara_kehilangan_buku
+- story: pinjaman_buku_hilang
+  steps:
+  - intent: pinjaman_buku_hilang
+  - action: utter_pinjaman_buku_hilang
+
+#Interlibrary
+- story: interlibrary_loan
+  steps:
+  - intent: interlibrary
+  - action: utter_interlibrary
+
+- story: pinjam_antara_perpustakaan
+  steps:
+  - intent: pinjam_antara
+  - action: utter_pinjam_antara
+
+- story: obtain_book_article
+  steps:
+  - intent: obtain_book_article
+  - action: utter_obtain_book_article
+
+- story: type_of_materials
+  steps:
+  - intent: type_of_materials
+  - action: utter_type_of_materials
+
+- story: cara_mendapatkan_buku
+  steps:
+  - intent: cara_mendapatkan_buku
+  - action: utter_cara_mendapatkan_buku
+
+- story: jenis_bahan
+  steps:
+  - intent: jenis_bahan
+  - action: utter_jenis_bahan
+  
+#Postal Book Loan
+- story: postal_book_loan
+  steps:
+  - intent: postal_book_loan
+  - action: utter_postal_book_loan
+
+- story: pinjam_pos
+  steps:
+  - intent: pinjam_pos
+  - action: utter_pinjam_pos
+
+
+
+# #Research
+# - story: research
+#   steps:
+#   - intent: research
+#   - action: utter_research
+
+# - story: penyelidikan
+#   steps:
+#   - intent: penyelidikan
+#   - action: utter_penyelidikan
+
+# #Reference
+# - story: reference
+#   steps:
+#   - intent: reference
+#   - action: utter_reference
+  
+# - story: rujukan
+#   steps:
+#   - intent: rujukan
+#   - action: utter_rujukan
+
+
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
 
 

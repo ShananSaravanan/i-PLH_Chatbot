@@ -15,9 +15,9 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+#Preferred Language - 1
 - intent: choose_lang_bm
   examples: |
-    - /choose_language{{"language": "bm"}}
     - I choose Bahasa Melayu
     - Select Bahasa Melayu
     - bahasa melayu
@@ -29,12 +29,360 @@ nlu:
 
 - intent: choose_lang_en
   examples: |
-    - /choose_language{{"language": "en"}}
     - English please
     - English
     - english 
     - in english
-    
+
+# Important Categories - 2
+
+#General info
+- intent: maklumat_umum
+  examples: |
+    - maklumat umum
+    - maklumat
+    - umum
+
+- intent: general_info
+  examples: |
+    - general info
+    - general
+    - info
+    - FAQ
+#Dress
+- intent: pakaian
+  examples: |
+    - pakaian
+    - etika pakaian
+    - kod pakaian
+    - etika kod pakaian
+    - Adakah terdapat etika kod pakaian di perpustakaan?
+    - kod pakaian di perpustakaan
+
+- intent: dress
+  examples: |
+    - dress
+    - dress code
+    - Is there any dress code etiquette in the library?
+    - dress code etiquette in the library
+#Wifi
+- intent: wifi_bm
+  examples: |
+    - perkhidmatan wifi
+    - servis WIFI
+    - Bagaimana untuk mengakses kemudahan Wi-fi di perpustakaan?
+    - mengakses kemudahan Wi-fi
+- intent: wifi_en
+  examples: |
+    - wifi
+    - wifi service
+    - How to access to Wi-fi facility in the library?
+    - access to Wi-fi
+#Operating hours
+- intent: waktu
+  examples: |
+    - waktu perkhidmatan
+    - waktu perpustakaan
+    - waktu buka
+    - Apakah waktu perkhidmatan perpustakaan?
+- intent: operating
+  examples: |
+    - operating hours
+    - opening hours
+    - library time
+    - What are the library's operating hours?
+#Account
+- intent: akaun
+  examples: |
+    - akaun perpustakaan
+    - akaun pengguna
+    - akaun
+- intent: account
+  examples: |
+    - account
+    - user account 
+    - library account
+- intent: cara_akaun
+  examples: |
+    - cara akaun
+    - buka akaun
+    - Bagaimana untuk mendapatkan akaun pengguna perpustakaan?
+- intent: ways_account
+  examples: |
+    - way to get account
+    - open account
+    - How to get a library user account?
+- intent: fungsi_akaun
+  examples: |
+    - fungsi akaun
+    - Apakah fungsi akaun pengguna perpustakaan?
+    - kebaikan akaun
+- intent: function_account
+  examples: |
+    - function of account
+    - account functions
+    - account benefits
+    - What is the function of a library user account?
+#Membership
+- intent: keahlian
+  examples: |
+    - ahli
+    - keahlian
+- intent: membership
+  examples: |
+    - member
+    - membership
+- intent: member_UTeM
+  examples: |
+    - How do UTeM staff and students apply for library membership?
+    - How can UTeM students or staff apply for library membership?
+    - Are UTeM staff and students automatically library members?
+- intent: visitor_member
+  examples: |
+    - Can non-UTeM individuals apply for library membership?
+    - How can individuals who are not UTeM students or staff apply for library membership?
+    - Are non-UTeM individuals eligible for library membership?
+- intent: keahlian_UTeM
+  examples: |
+    - Bagaimanakah cara kakitangan dan pelajar UTeM untuk memohon keahlian perpustakaan?
+    - Kakitangan dan pelajar UTeM secara automatik menjadi ahli perpustakaan, betul?
+    - Adakah kakitangan dan pelajar UTeM secara automatik ahli perpustakaan?
+- intent: orang_luar
+  examples: |
+    - Adakah individu bukan pelajar atau kakitangan UTeM boleh memohon keahlian Perpustakaan?
+    - Bagaimana individu bukan UTeM boleh memohon keahlian perpustakaan?
+    - Adakah individu bukan UTeM layak untuk keahlian perpustakaan?
+#Book Loan $ Return
+- intent: loan_return
+  examples: |
+    - return book loan
+    - return loan
+    - return book
+    - borrow
+    - return
+    - book loan
+    - loan book
+- intent: pinjam_pulang
+  examples: |
+    - pulang buku
+    - buku pulang
+    - pinjam buku
+    - buku meminjam
+    - pulang
+    - pinjam
+- intent: book_borrowing_quantity
+  examples: |
+    - "How many books can I borrow at once?"
+    - quantity of book borrowal
+    - can i borrow more than 1 book?
+
+- intent: online_book_loan_renewal
+  examples: |
+    - "How can I renew my book loan online?"
+    - renew loan online
+    - renew book loan online
+
+- intent: renew_book_loan
+  examples: |
+    - "I want to renew my book loan."
+    - How do I renew a book loan?
+    - book loan renewal
+    - renew book
+
+
+- intent: unsuccessful_book_loan_renewal
+  examples: |
+    - Why did I not successfully renew the book loan?
+    - "I couldn't renew my book loan."
+    - cant renew book loan
+    - Why did I not successfully renew the book loan?
+
+- intent: book_return_place
+  examples: |
+    - "Where can I return borrowed books?"
+    - "Where to return?"
+
+- intent: borrowing_without_card
+  examples: |
+    - "Can I borrow a book without my student card?"
+    - "Can I borrow a book without my staff card?"
+
+- intent: jumlah_buku_yang_boleh_dipinjam
+  examples: |
+    - "Berapa jumlah buku yang boleh saya pinjam?"
+    - "Berapa banyak buku yang saya boleh pinjam pada satu masa?"
+    - "Jumlah maksimum buku yang boleh dipinjam?"
+
+- intent: memperbaharui_tempoh_pinjaman_atas_talian
+  examples: |
+    - "Bagaimana cara memperbaharui pinjaman atas talian?"
+    - "Macam mana nak memperbaharui pinjaman buku secara online?"
+
+- intent: perbaharui_pinjaman_buku
+  examples: |
+    - "Saya nak memperbaharui pinjaman buku."
+    - "Macam mana nak perbaharui pinjaman buku?"
+
+- intent: tidak_berjaya_memperbaharui_pinjaman_buku
+  examples: |
+    - "Kenapa saya tak berjaya memperbaharui pinjaman buku?"
+    - "Tak boleh memperbaharui pinjaman buku, apa sebabnya?"
+
+- intent: tempat_pulangan_buku
+  examples: |
+    - "Di mana saya boleh pulangkan buku yang dipinjam?"
+    - "Tempat untuk pulangkan buku perpustakaan di mana?"
+
+- intent: pinjaman_tanpa_kad_pelajar
+  examples: |
+    - "Boleh tak pinjam buku tanpa kad pelajar?"
+    - "Saya tak ada kad pelajar, boleh pinjam buku tak?"
+
+#Fine and Lost
+- intent: fine_lost
+  examples: |
+    - I want to know about fines or lost books.
+    - How do I report a lost book?
+    - What happens if I lose a book?
+    - Tell me about overdue fines.
+    - Lost book fine policy?
+    - What's the process for reporting lost material?
+
+- intent: denda_hilang
+  examples: |
+    - Saya nak tahu tentang denda atau kehilangan buku.
+    - Bagaimana nak laporkan kehilangan buku?
+    - Apakah proses kehilangan buku?
+    - Beritahu saya tentang denda buku.
+    - Apa yang perlu dilakukan jika saya hilang buku?
+
+- intent: book_loan_overdue
+  examples: |
+    - Tell me about overdue book loans.
+    - What happens if I return a book late?
+    - Book loan overdue fines?
+    - What happen if my book loan is overdue?
+
+- intent: cash_payment_fine
+  examples: |
+    - Can I pay the fine with cash?
+    - Is cash accepted for paying library fines?
+    - How do I pay fines in cash?
+
+
+- intent: report_loss_book
+  examples: |
+    - How do I report a lost book?
+    - Lost book reporting process?
+    - What do I do if I lost a book?
+
+- intent: loan_material_lost
+  examples: |
+    - What if I lose the book I borrowed?
+    - Process for lost loaned books?
+    - I lost the book I borrowed.
+    - What should i do when the loan material is lost?
+
+- intent: tunggakan_pinjaman_buku
+  examples: |
+    - Bagaimana dengan tunggakan pinjaman buku?
+    - Apakah denda untuk buku yang lewat dipulangkan?
+    - Denda untuk tunggakan pinjaman buku?
+    - Apa yang berlaku jika pinjaman buku saya tertunggak?
+
+- intent: pembayaran_tunai_denda
+  examples: |
+    - Bolehkah saya bayar denda dengan tunai?
+    - Adakah denda boleh dibayar secara tunai?
+    - Pembayaran denda guna tunai?
+    - Bolehkah saya membuat pembayaran secara tunai untuk semua perkhidmatan berbayar dan denda?
+
+- intent: cara_kehilangan_buku
+  examples: |
+    - Bagaimana untuk laporkan kehilangan buku?
+    - Apa proses kehilangan buku?
+    - Apakah tindakan jika kehilangan buku?
+    - Bagaimanakah cara untuk menyelesaikan urusan buku hilang?
+
+- intent: pinjaman_buku_hilang
+  examples: |
+    - Apa yang berlaku jika buku yang saya pinjam hilang?
+    - Proses kehilangan bahan pinjaman?
+    - Saya hilang buku yang saya pinjam.
+    - Apakah yang perlu saya lakukan apabila bahan pinjaman hilang?
+
+#Interlibrary
+- intent: interlibrary
+  examples: |
+    - interlibrary
+    - loan between libraries
+
+- intent: pinjam_antara
+  examples: |
+    - pinjam antara perpustakaan
+    - pinjam dari tempat lain
+
+- intent: obtain_book_article
+  examples: |
+    - How do I obtain a book or article that is not available in the library?
+    - How can I get a book or article that the library does not have?
+
+- intent: cara_mendapatkan_buku
+  examples: |
+    - Bagaimana saya boleh mendapatkan buku atau artikel yang tiada di perpustakaan?
+    - Bagaimana cara untuk mendapatkan buku atau artikel yang tidak ada di perpustakaan?
+
+- intent: type_of_materials
+  examples: |
+    - What type of materials can I request through the interlibrary loan service?
+    - Can I request books, articles, or papers through interlibrary loan?
+
+- intent: jenis_bahan
+  examples: |
+    - Jenis bahan apa yang boleh diminta melalui perkhidmatan pinjaman antara perpustakaan?
+    - Adakah saya boleh memohon buku, artikel, atau kertas melalui pinjaman antara perpustakaan?
+
+#Postal Book Loan
+- intent: postal_book_loan
+  examples: |
+    - How do I request a postal book loan?
+    - Can I borrow books by post?
+    - Tell me about postal book loans
+    - How to borrow books from the library by mail?
+    - What are the requirements for borrowing books by post?
+    - How to use the Postal Book Loan service?
+- intent: pinjam_pos
+  examples: |
+    - Bagaimana cara meminjam buku melalui pos?
+    - Saya ingin tahu mengenai pinjaman buku pos
+    - Bolehkah saya meminjam buku secara pos?
+    - Apa syarat untuk meminjam buku melalui pos?
+    - Bagaimana cara untuk menggunakan perkhidmatan Pinjaman Secara Pos?
+
+#Reference
+- intent: rujukan
+  examples: |
+    - rujukan
+    - rujuk
+    - Rujukan
+
+- intent: reference
+  examples: |
+    - reference
+    - refer
+    - Reference
+
+#Research
+- intent: penyelidikan
+  examples: |
+    - penyelidikan
+    - selidik
+
+- intent: research
+  examples: |
+    - research
+    - Research
+
 - intent: ask_help
   examples: |
     - I need help
