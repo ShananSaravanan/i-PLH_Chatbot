@@ -80,7 +80,10 @@ intents:
 - type_of_materials
 - cara_mendapatkan_buku
 - jenis_bahan
-
+- what_is_order_collect
+- order_collect_usage
+- apakah_tempah_ambil
+- tempah_ambil_usage
 #entities:
 #- language
 # slots:
@@ -416,7 +419,7 @@ responses:
 #Interlibrary
   utter_interlibrary:
   - text: |
-      You can obtain a book or article not available in our library through the Interlibrary Loan Service. Please select the option below to learn more:
+      What information about inter-library would you like to know?
     buttons:
     - title: "How to obtain a book or article"
       payload: /obtain_book_article
@@ -425,7 +428,7 @@ responses:
 
   utter_pinjam_antara:
   - text: |
-      Anda boleh mendapatkan buku atau artikel yang tiada di perpustakaan melalui Perkhidmatan Pinjaman Antara Perpustakaan. Sila pilih pilihan di bawah untuk mengetahui lebih lanjut:
+      Apakah maklumat berkenaan dengan pinjaman antara perpustakaan yang sedang anda mencari?
     buttons:
     - title: "Cara mendapatkan buku atau artikel"
       payload: /cara_mendapatkan_buku
@@ -452,7 +455,7 @@ responses:
   utter_postal_book_loan:
   - text: |
       1. Users can only request a maximum of 3 books per transaction.
-      2. Only books (open shelf) with ‘available’ status can be loaned.
+      2. Only books (open shelf) with 'available' status can be loaned.
       3. Please email your request to bookrequest@utem.edu.my with the following details:
         - Title
         - Call Number
@@ -472,8 +475,52 @@ responses:
       5. Penghantaran buku akan dikendalikan melalui kurier menggunakan kaedah tunai semasa penghantaran (COD) dan pembayaran perlu dibuat oleh pemohon.
          Buku hanya boleh dihantar secara pos di dalam negara (tiada penghantaran ke luar negara).
 
+#Order and Collect
+  utter_order_collect:
+  - text: |
+      What information about Order and Collect would you like to know?
+    buttons:
+    - title: "What is Order & Collect?"
+      payload: "what_is_order_collect"
+    - title: "How to use Order & Collect?"
+      payload: "order_collect_usage"
 
+  utter_tempah_ambil:
+  - text: |
+      Apakah maklumat berkenaan dengan Tempah dan Ambil yang sedang anda mencari?
+    buttons:
+    - title: "Apa itu Tempah dan Ambil?"
+      payload: "apakah_tempah_ambil"
+    - title: "Bagaimana cara menggunakan Tempah dan Ambil?"
+      payload: "tempah_ambil_usage"
 
+  utter_what_is_order_collect:
+  - text: |
+      This service is provided to ease users in getting the books they wish to borrow without having to search for them at the shelves as usual.
+
+  utter_apakah_tempah_ambil:
+  - text: |
+      Perkhidmatan ini disediakan bagi memudahkan pengguna mendapatkan buku yang ingin dipinjam tanpa perlu mencarinya di rak seperti biasa.
+
+  utter_order_collect_usage:
+  - text: |
+      1. Please use the library OPAC to check which books are available in the library holdings before requesting.
+      2. Email to bookrequest@utem.edu.my with the following details:
+         - Title
+         - Call Number
+         - Author
+      3. Only books with 'Available' status can be requested.
+      4. Library staff will contact you with a date and time to collect your books. Please remember to bring your student/staff card along with you.
+
+  utter_tempah_ambil_usage:
+  - text: |
+      1. Sila gunakan OPAC perpustakaan untuk menyemak buku yang terdapat di perpustakaan sebelum membuat permohonan.
+      2. Permohonan boleh di e-mel ke bookrequest@utem.edu.my berserta maklumat lengkap:
+         - Judul buku
+         - Nombor panggilan
+         - Nama pengarang
+      3. Hanya buku yang berstatus 'Available' sahaja boleh dimohon.
+      4. Staf perpustakaan akan menghubungi anda dengan tarikh dan masa untuk mengumpul buku anda. Sila bawa bersama kad pelajar/staf anda.
 
   
   

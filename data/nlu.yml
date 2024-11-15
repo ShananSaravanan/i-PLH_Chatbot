@@ -359,6 +359,47 @@ nlu:
     - Apa syarat untuk meminjam buku melalui pos?
     - Bagaimana cara untuk menggunakan perkhidmatan Pinjaman Secara Pos?
 
+#Order and Collect
+- intent: order_collect
+  examples: |
+    - I want to order and collect
+    - order and collect
+
+- intent: tempah_ambil
+  examples: |
+    - Saya ingin tempah dan ambil
+    - tempah dan ambil
+
+- intent: what_is_order_collect
+  examples: |
+    - What is the Order & Collect service?
+    - Tell me about Order & Collect
+    - How can I order books without going to the shelves?
+
+- intent: tempah_ambil
+  examples: |
+    - Apa itu perkhidmatan Tempah dan Ambil?
+    - Ceritakan tentang Tempah dan Ambil
+    - Bagaimana saya boleh tempah buku tanpa pergi ke rak?
+
+- intent: order_collect_usage
+  examples: |
+    - How do I use the Order & Collect service?
+    - How can I order books online?
+    - What are the steps for Order & Collect?
+    - How do I request books via Order & Collect?
+    - What do I need to do to use Tempah dan Ambil?
+
+- intent: tempah_ambil_usage
+  examples: |
+    - Bagaimana cara menggunakan perkhidmatan Tempah dan Ambil?
+    - Bagaimana saya boleh tempah buku secara dalam talian?
+    - Apa langkah-langkah untuk menggunakan Tempah dan Ambil?
+    - Bagaimana saya boleh memohon buku melalui Tempah dan Ambil?
+    - Apa yang perlu saya lakukan untuk menggunakan Tempah dan Ambil?
+
+
+
 #Reference
 - intent: rujukan
   examples: |

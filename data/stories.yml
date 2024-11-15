@@ -273,6 +273,38 @@ stories:
   - intent: pinjam_pos
   - action: utter_pinjam_pos
 
+#Order and Collect
+- story: order_collect
+  steps:
+  - intent: order_collect
+  - action: utter_order_collect
+
+- story: tempah_ambil
+  steps:
+  - intent: tempah_ambil
+  - action: utter_tempah_ambil
+
+- story: utter_what_is_order_collect
+  steps:
+  - intent: what_is_order_collect
+  - action: utter_what_is_order_collect
+
+- story: utter_apakah_tempah_ambil
+  steps:
+  - intent: apakah_tempah_ambil
+  - action: utter_apakah_tempah_ambil
+
+- story: order_collect_usage
+  steps:
+  - intent: order_collect_usage
+  - action: utter_order_collect_usage
+
+- story: tempah_ambil_usage
+  steps:
+  - intent: tempah_ambil_usage
+  - action: utter_tempah_ambil_usage
+
+
 
 
 # #Research
