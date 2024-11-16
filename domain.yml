@@ -31,7 +31,7 @@ intents:
 - book_donation
 - repo_ir_en
 - collection_digital
-- memory_korporat
+- memory_corporate
 - pakaian
 - wifi_bm
 - waktu
@@ -84,6 +84,21 @@ intents:
 - order_collect_usage
 - apakah_tempah_ambil
 - tempah_ambil_usage
+- repo_ir_sub1_en
+- repo_ir_sub2_en
+- repo_ir_sub3_en
+- repo_ir_sub1_bm
+- repo_ir_sub2_bm
+- repo_ir_sub3_bm
+- collection_digital_sub1_en
+- collection_digital_sub2_en
+- koleksi_digital_sub1_bm
+- koleksi_digital_sub2_bm
+- memory_corporate_sub1_en
+- memory_corporate_sub2_en
+- memori_korporat_sub1_bm
+- memori_korporat_sub2_bm
+
 #entities:
 #- language
 # slots:
@@ -157,7 +172,7 @@ responses:
     - title: "Digital Collection UTeM"
       payload: '/collection_digital'
     - title: "Corporate Memory UTeM"
-      payload: '/memory_korporat'
+      payload: '/memory_corporate'
   
   utter_maklumat_umum:
   - text: "Apakah maklumat umum yang sedang anda mencari?"
@@ -522,7 +537,210 @@ responses:
       3. Hanya buku yang berstatus 'Available' sahaja boleh dimohon.
       4. Staf perpustakaan akan menghubungi anda dengan tarikh dan masa untuk mengumpul buku anda. Sila bawa bersama kad pelajar/staf anda.
 
+#Book suggestion
+  utter_book_suggestion:
+  - text: |
+      Before you suggest any titles for library collection, please check via OPAC PLH as we might already have the title. If the title is unavailable in the OPAC, forward your suggestion as follows:
+
+      **a)** Email your suggestion to Acquisition Librarian as follows: **noraini_mn@utem.edu.my**
+      **b)** List of details needed are as follows:
+         - Title
+         - Author / Editor
+         - ISBN
+         - Edition (if any)
+         - Volume (if any)
+         - Publisher
+         - Year
+      **c)** Title suggested must be LISTED in the Teaching Plan.
+
+      Only academic staff as well as management & professional staff are eligible to suggest new titles. Suggestions will be checked by our Monograph Unit. Purchasing the suggested title depends on the balance of the current allocation. Purchasing may be cancelled due to factors such as being out of stock, out of print, etc.
+
+  utter_cadangan_buku:
+  - text: |
+      Sebelum anda mencadangkan sebarang tajuk untuk koleksi perpustakaan, sila semak melalui OPAC PLH kerana kami mungkin sudah mempunyai tajuk tersebut. Jika tajuk tidak tersedia dalam OPAC, majukan cadangan anda seperti berikut:
+
+      **a)** E-melkan cadangan anda kepada Pustakawan Pemerolehan seperti berikut: **noraini_mn@utem.edu.my**
+      **b)** Senarai butiran yang diperlukan adalah seperti berikut:
+         - Tajuk
+         - Pengarang / Editor
+         - ISBN
+         - Edisi (jika ada)
+         - Jilid (jika ada)
+         - Penerbit
+         - Tahun
+      **c)** Tajuk yang dicadangkan hendaklah DISEnaraikan dalam Rancangan Pengajaran.
+
+      Hanya kakitangan akademik serta kakitangan pengurusan & profesional layak mencadangkan tajuk baharu. Cadangan akan disemak oleh Unit Monograf kami. Pembelian tajuk yang dicadangkan bergantung pada baki peruntukan semasa. Pembelian mungkin dibatalkan kerana faktor tertentu seperti kehabisan stok, kehabisan cetakan, dsb.
+
+#Book donation
+  utter_book_donation:
+  - text: |
+      Kindly contact our **UTeM Collection, Gift and Exchange Unit** at **06-2701239** or email **noraini@utem.edu.my**. Our officer will assist and guide you for the next step.
+
+  utter_sumbangan_buku:
+  - text: |
+      Sila hubungi **Unit Koleksi, Hadiah dan Pertukaran UTeM** kami di **06-2701239** atau e-mel **noraini@utem.edu.my**. Pegawai kami akan membantu dan membimbing anda untuk langkah seterusnya.
+
+#E-Book Suggestion
+  utter_ebook_suggestion:
+  - text: |
+      Kindly contact our **Electronic Resources Unit** at **06-2701199** or email **norshahila@utem.edu.my**. Our officer will assist and guide you for the next step.
   
+  utter_cadangan_buku_digital:
+  - text: |
+      Sila hubungi **Unit Sumber Elektronik** kami di **06-2701199** atau e-mel **norshahila@utem.edu.my**. Pegawai kami akan membantu dan membimbing anda untuk langkah seterusnya.
+
+#IR
+  utter_repo_ir_en:
+  - text: |
+     What information about UTeM IR would you like to know?
+    buttons:
+    - title: What is UTeM IR?
+      payload: /repo_ir_sub1_en
+    - title: What is the IR platform?
+      payload: /repo_ir_sub2_en
+    - title: Access full text of thesis or FYP?
+      payload: /repo_ir_sub3_en
+
+  utter_repo_ir_bm:
+  - text: |
+      Apakah maklumat berkenaan dengan Tempah dan Ambil yang sedang anda mencari?
+    buttons:
+    - title: Apakah IR UTeM?
+      payload: /repo_ir_sub1_bm
+    - title: Apakah platform IR?
+      payload: /repo_ir_sub2_bm
+    - title: Akses teks penuh tesis atau PSM?
+      payload: /repo_ir_sub3_bm
+
+  utter_repo_ir_sub1_en:
+  - text: |
+      UTeM IR is an online digital collection that serves as a central repository for scholarly materials at UTeM, including:
+      - Articles
+      - Book Chapters
+      - Conference Papers
+      - Books
+      - Theses
+      - Patents
+      - Technical Reports
+
+  utter_repo_ir_sub1_bm:
+  - text: |
+      IR UTeM ialah koleksi digital dalam talian yang berfungsi sebagai pusat repositori bahan ilmiah, termasuk:
+      - Artikel
+      - Bab dalam Buku
+      - Persidangan
+      - Buku Ilmiah
+      - Tesis
+      - Paten
+      - Laporan Teknikal
+  
+  utter_repo_ir_sub2_en:
+  - text: |
+      Visit the UTeM IR Platform at [https://eprints.utem.edu.my](https://eprints.utem.edu.my).
+  utter_repo_ir_sub2_bm:
+  - text: |
+      Layari platform IR UTeM di [https://eprints.utem.edu.my](https://eprints.utem.edu.my).
+
+
+  utter_repo_ir_sub3_en:
+  - text: |
+      The full text of the thesis or final year project is only available to the UTeM community. Email **repositoryplh@utem.edu.my** to request access. 
+      - Approval process takes **three (3) working days**.
+      - Access is granted for **14 days** only.
+
+  utter_repo_ir_sub3_bm:
+  - text: |
+      Teks penuh tesis atau PSM hanya dibenarkan kepada warga UTeM. Hantar permohonan ke e-mel **repositoryplh@utem.edu.my**.
+      - Tempoh kelulusan mengambil masa **3 hari bekerja**.
+      - Akses dibuka untuk **14 hari** sahaja.
+
+#Digital Collection
+  utter_collection_digital_en:
+  - text: |
+      What information about Digital Collection would you like to know?
+    buttons:
+    - title: What is the UTeM digital collection?
+      payload: /collection_digital_sub1_en
+    - title: What is the UTeM Digital Collection platform?
+      payload: /collection_digital_sub2_en
+
+  utter_collection_digital_bm:
+  - text: |
+      Apakah maklumat berkenaan dengan Koleksi Digital yang sedang anda mencari?
+    buttons:
+    - title: Apakah Koleksi Digital UTeM?
+      payload: /koleksi_digital_sub1_bm
+    - title: Apakah platform Koleksi Digital UTeM?
+      payload: /koleksi_digital_sub2_bm
+
+  utter_collection_digital_sub1_en:
+  - text: |
+      The UTeM Digital Collection is the university's online digital archive that includes:
+      - Audio
+      - UTeM News
+      - Books
+      - Bulletins
+      - Images
+      - Final Year Projects
+      - Speeches
+      - Videos
+
+  utter_collection_digital_sub1_bm:
+  - text: |
+      Koleksi Digital UTeM ialah arkib digital universiti dalam talian yang merangkumi bahan:
+      - Audio
+      - Berita UTeM
+      - Buku umum
+      - Buletin
+      - Gambar
+      - Projek Sarjana Muda
+      - Teks Ucapan
+      - Video
+
+  utter_collection_digital_sub2_en:
+  - text: |
+      Visit the UTeM Digital Collection platform at [https://digitalcollection.utem.edu.my](https://digitalcollection.utem.edu.my).
+
+  utter_collection_digital_sub2_bm:
+  - text: |
+      Layari platform Koleksi Digital UTeM di [https://digitalcollection.utem.edu.my](https://digitalcollection.utem.edu.my).
+
+#Corporate Memory
+  utter_memory_corporate_en:
+  - text: |
+      What information about Corporate Memory would you like to know?
+    buttons:
+    - title: What is UTeM Corporate Memory?
+      payload: /memory_corporate_sub1_en
+    - title: What is UTeM Corporate Memory Platform?
+      payload: /memory_corporate_sub2_en
+
+  utter_memory_corporate_bm:
+  - text: |
+      Apakah maklumat berkenaan dengan Memori Korporat yang sedang anda mencari?
+    buttons:
+    - title: Apakah Memori Korporat UTeM?
+      payload: /memori_korporat_sub1_bm
+    - title: Apakah platform Memori Korporat UTeM?
+      payload: /memori_korporat_sub2_bm
+
+  utter_memory_corporate_sub1_en:
+  - text: |
+      The UTeM Corporate Memory is the centre of collection and storage of historical materials and symbolism to UTeM.
+
+  utter_memory_corporate_sub1_bm:
+  - text: |
+      Memori Korporat UTeM ialah pusat pengumpulan dan penyimpanan bahan-bahan sejarah dan simbolisme kepada UTeM.
+
+  utter_memory_corporate_sub2_en:
+  - text: |
+      Visit the UTeM Corporate Memory platform at [https://memorikorporatplh.utem.edu.my](https://memorikorporatplh.utem.edu.my).
+
+  utter_memory_corporate_sub2_bm:
+  - text: |
+      Layari platform Memori Korporat UTeM di [https://memorikorporatplh.utem.edu.my](https://memorikorporatplh.utem.edu.my).
+
   
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'

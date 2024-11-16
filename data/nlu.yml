@@ -242,7 +242,6 @@ nlu:
 - intent: fine_lost
   examples: |
     - I want to know about fines or lost books.
-    - How do I report a lost book?
     - What happens if I lose a book?
     - Tell me about overdue fines.
     - Lost book fine policy?
@@ -376,7 +375,7 @@ nlu:
     - Tell me about Order & Collect
     - How can I order books without going to the shelves?
 
-- intent: tempah_ambil
+- intent: apakah_tempah_ambil
   examples: |
     - Apa itu perkhidmatan Tempah dan Ambil?
     - Ceritakan tentang Tempah dan Ambil
@@ -398,6 +397,164 @@ nlu:
     - Bagaimana saya boleh memohon buku melalui Tempah dan Ambil?
     - Apa yang perlu saya lakukan untuk menggunakan Tempah dan Ambil?
 
+#Book suggestion
+- intent: book_suggestion
+  examples: |
+    - How can I suggest books for purchase by the library?
+    - Can I suggest books for the library to purchase?
+    - What is the process for book suggestions?
+    - How do I recommend new titles for the library?
+    - Suggesting books to the library
+
+- intent: cadangan_buku
+  examples: |
+    - Bagaimana saya boleh mencadangkan buku untuk dibeli perpustakaan?
+    - Bolehkah saya mencadangkan buku untuk dibeli oleh perpustakaan?
+    - Apa proses untuk mencadangkan buku?
+    - Bagaimana cara untuk mencadangkan tajuk baru kepada perpustakaan?
+    - Cadangan buku kepada perpustakaan
+
+#Book donation
+- intent: book_donation
+  examples: |
+    - How can I donate books to the library?
+    - I have some books to donate, how do I do it?
+    - Can I donate used books to the library?
+    - What is the process for book donations?
+    - Donating books to PLH Library
+
+- intent: sumbangan_buku
+  examples: |
+    - Bagaimana saya boleh menderma buku ke perpustakaan?
+    - Saya ada buku terpakai untuk didermakan, bagaimana caranya?
+    - Bolehkah saya menderma buku kepada perpustakaan?
+    - Apa proses untuk menderma buku?
+    - Sumbangan buku kepada Perpustakaan PLH
+
+#E-Book suggestion
+- intent: ebook_suggestion
+  examples: |
+    - How can I suggest an eBook to the library?
+    - I have a suggestion for an eBook, how do I submit it?
+    - Can I suggest digital books to the library?
+    - I want to suggest an eBook for the library collection.
+    - eBook suggestion process
+
+- intent: cadangan_buku_digital
+  examples: |
+    - Bagaimana saya boleh mencadangkan eBook kepada perpustakaan?
+    - Saya ada cadangan eBook, bagaimana cara untuk menghantarnya?
+    - Bolehkah saya mencadangkan buku digital kepada perpustakaan?
+    - Saya ingin mencadangkan eBook untuk koleksi perpustakaan.
+    - Proses cadangan buku digital
+
+#IR
+- intent: repo_ir_en
+  examples: |
+    - UTeM IR
+    - Information about UTeM repository
+    - I want to learn about UTeM IR
+
+- intent: repo_ir_bm
+  examples: |
+    - Ceritakan tentang IR UTeM
+    - Berikan maklumat tentang repositori UTeM
+    - Saya mahu tahu tentang IR UTeM
+
+- intent: repo_ir_sub1_en
+  examples: |
+    - What is UTeM IR?
+    - Tell me about the UTeM IR repository
+    - Explain what UTeM IR is
+
+- intent: repo_ir_sub1_bm
+  examples: |
+    - Apakah IR UTeM?
+    - Berikan maklumat tentang IR UTeM
+
+- intent: repo_ir_sub2_en
+  examples: |
+    - What is the UTeM IR platform?
+    - Where can I find the UTeM IR platform?
+
+- intent: repo_ir_sub2_bm
+  examples: |
+    - Apakah platform IR UTeM?
+    - Berikan maklumat tentang platform IR UTeM
+
+- intent: repo_ir_sub3_en
+  examples: |
+    - How do I access the full text of a thesis?
+    - Can I access FYP reports on UTeM IR?
+
+- intent: repo_ir_sub3_bm
+  examples: |
+    - Akses teks penuh tesis
+    - Bagaimana saya boleh akses PSM?
+
+#Digital Collection
+- intent: collection_digital
+  examples: |
+    - I want to know about the UTeM Digital Collection
+    - How can I access the UTeM digital archive?
+
+- intent: koleksi_digital
+  examples: |
+    - Saya mahu tahu tentang Koleksi Digital UTeM
+    - Bagaimana saya boleh mengakses Koleksi Digital UTeM?
+
+- intent: collection_digital_sub1_en
+  examples: |
+    - What is the UTeM digital collection?
+    - Tell me about the UTeM digital archive
+    - Explain UTeM digital collection
+
+- intent: koleksi_digital_sub1_bm
+  examples: |
+    - Apakah Koleksi Digital UTeM?
+    - Berikan maklumat tentang Koleksi Digital UTeM
+
+- intent: collection_digital_sub2_en
+  examples: |
+    - What is the UTeM Digital Collection platform?
+    - Where can I access the UTeM digital archive?
+
+- intent: koleksi_digital_sub2_bm
+  examples: |
+    - Apakah platform Koleksi Digital UTeM?
+    - Di mana saya boleh mengakses arkib digital UTeM?
+
+#Corporate Memory
+- intent: memory_corporate
+  examples: |
+    - UTeM Corporate Memory
+    - I want to know about UTeM Corporate Memory
+
+- intent: memori_korporat
+  examples: |
+    - Memori Korporat UTeM?
+    - Saya mahu tahu tentang Memori Korporat UTeM
+
+- intent: memory_corporate_sub1_en
+  examples: |
+    - What is UTeM Corporate Memory?
+    - Tell me about UTeM Corporate Memory
+    - Explain UTeM Corporate Memory
+
+- intent: memori_korporat_sub1_bm
+  examples: |
+    - Apakah Memori Korporat UTeM?
+    - Berikan maklumat tentang Memori Korporat UTeM
+
+- intent: memory_corporate_sub2_en
+  examples: |
+    - What is the UTeM Corporate Memory platform?
+    - Where can I access UTeM Corporate Memory?
+
+- intent: memori_korporat_sub2_bm
+  examples: |
+    - Apakah platform Memori Korporat UTeM?
+    - Di mana saya boleh mengakses Memori Korporat UTeM?
 
 
 #Reference

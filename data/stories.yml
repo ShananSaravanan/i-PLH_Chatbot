@@ -304,6 +304,142 @@ stories:
   - intent: tempah_ambil_usage
   - action: utter_tempah_ambil_usage
 
+#Book suggestion
+- story: book_suggestion
+  steps:
+  - intent: book_suggestion
+  - action: utter_book_suggestion
+
+- story: cadangan_buku
+  steps:
+  - intent: cadangan_buku
+  - action: utter_cadangan_buku
+
+#Book donation
+- story: book_donation
+  steps:
+  - intent: book_donation
+  - action: utter_book_donation
+
+- story: sumbangan_buku
+  steps:
+  - intent: sumbangan_buku
+  - action: utter_sumbangan_buku
+
+#E-Book Suggestion
+- story: ebook_suggestion
+  steps:
+  - intent: ebook_suggestion
+  - action: utter_ebook_suggestion
+
+- story: cadangan_buku_digital
+  steps:
+  - intent: cadangan_buku_digital
+  - action: utter_cadangan_buku_digital
+
+# IR
+- story: repo_ir_en
+  steps:
+  - intent: repo_ir_en
+  - action: utter_repo_ir_en
+
+- story: repo_ir_bm
+  steps:
+  - intent: repo_ir_bm
+  - action: utter_repo_ir_bm
+
+- story: repo_ir_sub1_en
+  steps:
+  - intent: repo_ir_sub1_en
+  - action: utter_repo_ir_sub1_en
+
+- story: repo_ir_sub1_bm
+  steps:
+  - intent: repo_ir_sub1_bm
+  - action: utter_repo_ir_sub1_bm
+
+- story: repo_ir_sub2_en
+  steps:
+  - intent: repo_ir_sub2_en
+  - action: utter_repo_ir_sub2_en
+
+- story: repo_ir_sub2_bm
+  steps:
+  - intent: repo_ir_sub2_bm
+  - action: utter_repo_ir_sub2_bm
+
+- story: repo_ir_sub3_en
+  steps:
+  - intent: repo_ir_sub3_en
+  - action: utter_repo_ir_sub3_en
+
+- story: repo_ir_sub3_bm
+  steps:
+  - intent: repo_ir_sub3_bm
+  - action: utter_repo_ir_sub3_bm
+
+#Digital Collection
+- story: collection_digital_en
+  steps:
+  - intent: collection_digital
+  - action: utter_collection_digital_en
+
+- story: collection_digital_bm
+  steps:
+  - intent: koleksi_digital
+  - action: utter_collection_digital_bm
+
+- story: collection_digital_sub1_en
+  steps:
+  - intent: collection_digital_sub1_en
+  - action: utter_collection_digital_sub1_en
+
+- story: koleksi_digital_sub1_bm
+  steps:
+  - intent: koleksi_digital_sub1_bm
+  - action: utter_collection_digital_sub1_bm
+
+- story: collection_digital_sub2_en 
+  steps:
+  - intent: collection_digital_sub2_en
+  - action: utter_collection_digital_sub2_en
+
+- story: koleksi_digital_sub2_bm 
+  steps:
+  - intent: koleksi_digital_sub2_bm
+  - action: utter_collection_digital_sub2_bm
+
+#Corporate Memory
+- story: memory_corporate_en
+  steps:
+  - intent: memory_corporate
+  - action: utter_memory_corporate_en
+
+- story: memori_korporat_bm
+  steps:
+  - intent: memori_korporat
+  - action: utter_memory_corporate_bm
+
+- story: memory_corporate_sub1_en
+  steps:
+  - intent: memory_corporate_sub1_en
+  - action: utter_memory_corporate_sub1_en
+
+- story: memori_korporat_sub1_bm
+  steps:
+  - intent: memori_korporat_sub1_bm
+  - action: utter_memory_corporate_sub1_bm
+
+- story: memory_corporate_sub2_en
+  steps:
+  - intent: memory_corporate_sub2_en
+  - action: utter_memory_corporate_sub2_en
+
+- story: memori_korporat_sub2_bm
+  steps:
+  - intent: memori_korporat_sub2_bm
+  - action: utter_memory_corporate_sub2_bm
+
 
 
 
