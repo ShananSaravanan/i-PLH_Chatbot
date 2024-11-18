@@ -581,6 +581,148 @@ nlu:
     - research
     - Research
 
+#Publication
+- intent: publication_verification
+  examples: |
+    - How do I verify my publication?
+    - I need publication verification.
+    - What is the process for publication verification?
+    - Verification for thesis submission.
+    - Publication verification for VIVA.
+
+- intent: pengesahan_penerbitan
+  examples: |
+    - Bagaimana saya boleh buat pengesahan penerbitan?
+    - Saya perlukan pengesahan penerbitan.
+    - Apakah proses untuk pengesahan penerbitan?
+    - Pengesahan penerbitan untuk VIVA.
+    - Proses pengesahan tesis.
+
+#URIS
+- intent: uris_verification
+  examples: |
+    - How do I verify URIS?
+    - I need help with URIS verification.
+    - What is the process for URIS verification?
+    - How to confirm my URIS details?
+    - Process for verifying URIS publications.
+
+- intent: pengesahan_uris
+  examples: |
+    - Bagaimana cara untuk pengesahan URIS?
+    - Saya perlukan bantuan pengesahan URIS.
+    - Apakah proses untuk pengesahan URIS?
+    - Bagaimana untuk mengesahkan butiran URIS?
+    - Proses pengesahan penerbitan URIS.
+
+#Journal
+- intent: journal_verification
+  examples: |
+    - How do I verify the status of a journal?
+    - I need journal verification.
+    - What is the process for journal verification?
+    - How to check a journal's status?
+    - Verify ISSN and publisher details for a journal.
+
+- intent: pengesahan_jurnal
+  examples: |
+    - Bagaimana cara untuk pengesahan status jurnal?
+    - Saya perlukan pengesahan jurnal.
+    - Apakah proses untuk pengesahan status jurnal?
+    - Bagaimana untuk menyemak status jurnal?
+    - Sahkan ISSN dan butiran penerbit untuk jurnal.
+
+#EPPTA
+- intent: eppta_inquiry
+  examples: |
+    - I need help with EPPTA.
+    - How do I contact someone regarding EPPTA?
+    - I have questions about EPPTA.
+    - EPPTA assistance, please.
+    - Who can I contact for EPPTA?
+
+- intent: eppta_pertanyaan
+  examples: |
+    - Saya perlukan bantuan mengenai EPPTA.
+    - Bagaimana cara untuk hubungi pihak EPPTA?
+    - Saya ada soalan mengenai EPPTA.
+    - Bantuan EPPTA, tolong.
+    - Siapa yang boleh saya hubungi untuk EPPTA?
+
+#SCOPUS
+- intent: scopus_hindex_inquiry
+  examples: |
+    - How do I check SCOPUS and H-index details?
+    - I need information about Quartile rankings in JCR.
+    - How do I verify WOS or Quartile levels (Q1-Q4)?
+    - Assistance for SCOPUS and Quartile information.
+    - Who can help me with H-index or JCR Quartile verification?
+
+- intent: semakan_hindex_pertanyaan
+  examples: |
+    - Bagaimana cara untuk semakan H-index dan SCOPUS?
+    - Saya perlukan maklumat mengenai Quartile dalam JCR.
+    - Bagaimana untuk menyemak WOS atau tahap Quartile (Q1-Q4)?
+    - Bantuan mengenai maklumat SCOPUS dan Quartile.
+    - Siapa yang boleh membantu semakan H-index atau Quartile JCR?
+
+#Research Consultation
+- intent: research_consultation
+  examples: |
+    - How can I register for a research consultation?
+    - Where do I sign up for research consultation?
+    - I need information about research consultation.
+    - How do I contact for research consultation?
+    - Can you help me with research consultation details?
+
+- intent: perundingan_penyelidikan
+  examples: |
+    - Bagaimana cara untuk daftar perundingan penyelidikan?
+    - Di mana saya boleh daftar untuk perundingan penyelidikan?
+    - Saya perlukan maklumat mengenai perundingan penyelidikan.
+    - Bagaimana untuk hubungi pihak perundingan penyelidikan?
+    - Boleh bantu saya dengan maklumat perundingan penyelidikan?
+
+#Research Support
+- intent: research_support_programme
+  examples: |
+    - How can I register for the Research Support Programme?
+    - Where can I sign up for the Research Support Programme?
+    - I need information about the Research Support Programme.
+    - Who can I contact for inquiries about the Research Support Programme?
+    - Can you help me with the Research Support Programme details?
+
+- intent: program_sokongan_penyelidikan
+  examples: |
+    - Bagaimana cara untuk daftar Program Sokongan Penyelidikan?
+    - Di mana saya boleh daftar untuk Program Sokongan Penyelidikan?
+    - Saya perlukan maklumat mengenai Program Sokongan Penyelidikan.
+    - Siapa yang boleh saya hubungi untuk pertanyaan mengenai Program Sokongan Penyelidikan?
+    - Boleh bantu saya dengan maklumat Program Sokongan Penyelidikan?
+
+#Mendeley
+- intent: mendeley_en
+  examples: |
+    - How can I get help with Mendeley?
+    - I need assistance with Mendeley.
+    - Can I contact someone for Mendeley support?
+    - Who should I reach out to for Mendeley inquiries?
+    - How do I contact for Mendeley issues?
+
+- intent: mendeley_bm
+  examples: |
+    - Bagaimana saya boleh dapatkan bantuan dengan Mendeley?
+    - Saya perlukan bantuan dengan Mendeley.
+    - Boleh saya hubungi seseorang untuk sokongan Mendeley?
+    - Siapa yang saya perlu hubungi untuk pertanyaan mengenai Mendeley?
+    - Bagaimana cara saya untuk hubungi masalah Mendeley?
+
+
+
+
+
+
+
 - intent: ask_help
   examples: |
     - I need help

@@ -98,6 +98,22 @@ intents:
 - memory_corporate_sub2_en
 - memori_korporat_sub1_bm
 - memori_korporat_sub2_bm
+- publication_verification
+- uris_verification
+- journal_verification
+- eppta_pertanyaan
+- scopus_hindex_inquiry
+- research_consultation
+- research_support_programme
+- mendeley_en
+- pengesahan_penerbitan
+- pengesahan_uris
+- pengesahan_jurnal
+- eppta_inquiry
+- semakan_hindex_pertanyaan
+- perundingan_penyelidikan
+- program_sokongan_penyelidikan
+- mendeley_bm
 
 #entities:
 #- language
@@ -741,7 +757,194 @@ responses:
   - text: |
       Layari platform Memori Korporat UTeM di [https://memorikorporatplh.utem.edu.my](https://memorikorporatplh.utem.edu.my).
 
-  
+
+#Research
+
+  utter_research:
+  - text:  What information about Research would you like to know?
+    buttons:
+    - title: Publication Verification
+      payload: /publication_verification
+    - title: URIS Verification
+      payload: /uris_verification
+    - title: Journal Verification
+      payload: /journal_verification
+    - title: EPPTA
+      payload: /eppta_inquiry
+    - title: SCOPUS, H-index, WOS, Quartile
+      payload: /scopus_hindex_inquiry
+    - title: Research Consultation
+      payload: /research_consultation
+    - title: Research Support Programme
+      payload: /research_support_programme
+    - title: Mendeley
+      payload: /mendeley_en
+
+
+  utter_penyelidikan:
+  - text: Apakah maklumat berkenaan dengan Penyelidikan yang sedang anda mencari?
+    buttons:
+    - title: Pengesahan Penerbitan
+      payload: /pengesahan_penerbitan
+    - title: Pengesahan URIS
+      payload: /pengesahan_uris
+    - title: Pengesahan Status Jurnal
+      payload: /pengesahan_jurnal
+    - title: EPPTA
+      payload: /eppta_pertanyaan
+    - title: Semakan H-index, WOS, Quartile
+      payload: /semakan_hindex_pertanyaan
+    - title: Perundingan Penyelidikan
+      payload: /perundingan_penyelidikan
+    - title: Program Sokongan Penyelidikan
+      payload: /program_sokongan_penyelidikan
+    - title: Mendeley
+      payload: /mendeley_bm
+
+#Publication
+  utter_publication_verification:
+  - text: |
+      Publication Verification:
+      - Email to: mawardi@utem.edu.my, hasliza@utem.edu.my
+      - Please state the purpose of verification:
+        - VIVA
+        - Graduation
+        - Thesis submission
+        - Hardbound thesis
+        - Zamalah Grant
+        - Others?
+      - Attach PDF document (published version).
+
+      Note: The request will be processed within 3 working days.
+
+  utter_pengesahan_penerbitan:
+  - text: |
+      Pengesahan Penerbitan:
+      - Emel kepada: mawardi@utem.edu.my, hasliza@utem.edu.my
+      - Sila nyatakan tujuan permohonan:
+        - VIVA
+        - Graduasi
+        - Penyerahan tesis
+        - Tesis hardbound
+        - Geran Zamalah
+        - Lain-lain?
+      - Sertakan dokumen PDF bagi penerbitan yang telah diterbitkan.
+
+      Nota: Permohonan akan diproses dalam tempoh 3 hari bekerja.
+
+#URIS
+  utter_uris_verification:
+  - text: |
+      URIS Verification:
+      - Email to: mawardi@utem.edu.my, hasliza@utem.edu.my
+      - Please mention the type of publication:
+        - Journal
+        - Conference
+        - Book
+        - Chapter of a book
+        - Other publication types
+      - Include the title of the publication in your email.
+
+  utter_pengesahan_uris:
+  - text: |
+      Pengesahan URIS:
+      - Emel kepada: mawardi@utem.edu.my, hasliza@utem.edu.my
+      - Sila nyatakan jenis penerbitan:
+        - Jurnal
+        - Seminar
+        - Buku
+        - Tajuk dalam buku
+        - Lain-lain penerbitan
+      - Sertakan tajuk penerbitan dalam emel anda.
+
+#Journal
+  utter_journal_verification:
+  - text: >
+      Journal Verification:
+      - Email to: mawardi@utem.edu.my, hasliza@utem.edu.my
+      - Please email the following details:
+        - Title of the journal
+        - ISSN
+        - Publisher name
+        - URL of the publisher's website
+
+  utter_pengesahan_status_jurnal:
+  - text: >
+      Pengesahan Status Jurnal:
+      - Emel kepada: mawardi@utem.edu.my, hasliza@utem.edu.my
+      - Sila emelkan maklumat berikut:
+        - Tajuk jurnal
+        - Nombor ISSN
+        - Nama penerbit
+        - URL laman web penerbit
+
+#EPPTA
+  utter_eppta:
+  - text: |
+      EPPTA:
+      - Email or call:
+        - mawardi@utem.edu.my, (06-2701213)
+        - hasliza@utem.edu.my, (06-2701215)
+
+  utter_eppta_malay:
+  - text: |
+      EPPTA:
+      - Emel atau telefon:
+        - mawardi@utem.edu.my, (06-2701213)
+        - hasliza@utem.edu.my, (06-2701215)
+
+#SCOPUS
+  utter_scopus_hindex:
+  - text: |
+      SCOPUS, H-index, WOS, Quartile (Q1, Q2, Q3, Q4) in JCR:
+      - Email to: mawardi@utem.edu.my
+
+  utter_semakan_hindex:
+  - text: |
+      Semakan H-index, WOS, Quartile (Q1, Q2, Q3, Q4) dalam JCR:
+      - Emel kepada: mawardi@utem.edu.my
+
+#Research Consultation
+  utter_research_consultation:
+  - text: |
+      Research Consultation:
+      - Register at: https://bit.ly/2LPdnjX
+      - Email to: hasliza@utem.edu.my
+
+  utter_perundingan_penyelidikan:
+  - text: |
+      Perundingan Penyelidikan:
+      - Daftar di: https://bit.ly/2LPdnjX
+      - Emel kepada: hasliza@utem.edu.my
+
+#Research Support
+  utter_research_support_programme:
+  - text: |
+      Research Support Programme:
+      - Register at: https://bit.ly/2M2cPf7
+      - Any inquiries email to: suzana@utem.edu.my
+
+  utter_program_sokongan_penyelidikan:
+  - text: |
+      Program Sokongan Penyelidikan:
+      - Daftar di: https://bit.ly/2M2cPf7
+      - Sebarang pertanyaan sila emel kepada: suzana@utem.edu.my
+
+#Mendeley
+  utter_mendeley_en:
+  - text: |
+      Mendeley:
+      - Email or call:
+      - mawardi@utem.edu.my (06-2701213)
+      - hasliza@utem.edu.my (06-2701215)
+
+  utter_mendeley_bm:
+  - text: |
+      Mendeley:
+      - Emel atau telefon:
+      - mawardi@utem.edu.my (06-2701213)
+      - hasliza@utem.edu.my (06-2701215)
+
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
     image: https://i.imgur.com/nGF1K8f.jpg

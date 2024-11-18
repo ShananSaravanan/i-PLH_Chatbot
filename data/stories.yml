@@ -443,16 +443,106 @@ stories:
 
 
 
-# #Research
-# - story: research
-#   steps:
-#   - intent: research
-#   - action: utter_research
+#Research
+- story: research
+  steps:
+  - intent: research
+  - action: utter_research
 
-# - story: penyelidikan
-#   steps:
-#   - intent: penyelidikan
-#   - action: utter_penyelidikan
+- story: penyelidikan
+  steps:
+  - intent: penyelidikan
+  - action: utter_penyelidikan
+
+#Publication
+- story: respond_to_publication_verification
+  steps:
+  - intent: publication_verification
+  - action: utter_publication_verification
+
+- story: respond_to_pengesahan_penerbitan
+  steps:
+  - intent: pengesahan_penerbitan
+  - action: utter_pengesahan_penerbitan
+
+#URIS
+- story: respond_to_uris_verification
+  steps:
+  - intent: uris_verification
+  - action: utter_uris_verification
+
+- story: respond_to_pengesahan_uris
+  steps:
+  - intent: pengesahan_uris
+  - action: utter_pengesahan_uris
+
+#Journal
+- story: respond_to_journal_verification
+  steps:
+  - intent: journal_verification
+  - action: utter_journal_verification
+
+- story: respond_to_pengesahan_status_jurnal
+  steps:
+  - intent: pengesahan_jurnal
+  - action: utter_pengesahan_status_jurnal
+
+#EPPTA
+- story: respond_to_eppta_inquiry
+  steps:
+  - intent: eppta_inquiry
+  - action: utter_eppta
+
+- story: respond_to_eppta_pertanyaan
+  steps:
+  - intent: eppta_pertanyaan
+  - action: utter_eppta_malay
+
+#SCOPUS
+- story: respond_to_scopus_hindex_inquiry
+  steps:
+  - intent: scopus_hindex_inquiry
+  - action: utter_scopus_hindex
+
+- story: respond_to_semakan_hindex_pertanyaan
+  steps:
+  - intent: semakan_hindex_pertanyaan
+  - action: utter_semakan_hindex
+
+#Research Consultation
+- story: respond_to_research_consultation_inquiry
+  steps:
+  - intent: research_consultation
+  - action: utter_research_consultation
+
+- story: respond_to_perundingan_penyelidikan_pertanyaan
+  steps:
+  - intent: perundingan_penyelidikan
+  - action: utter_perundingan_penyelidikan
+
+#Research Support
+- story: respond_to_research_support_programme_inquiry
+  steps:
+  - intent: research_support_programme
+  - action: utter_research_support_programme
+
+- story: respond_to_program_sokongan_penyelidikan_pertanyaan
+  steps:
+  - intent: program_sokongan_penyelidikan
+  - action: utter_program_sokongan_penyelidikan
+
+#Mendeley
+- story: respond_to_mendeley_inquiry
+  steps:
+  - intent: mendeley_en
+  - action: utter_mendeley_en
+
+- story: respond_to_mendeley_pertanyaan
+  steps:
+  - intent: mendeley_bm
+  - action: utter_mendeley_bm
+
+
 
 # #Reference
 # - story: reference
