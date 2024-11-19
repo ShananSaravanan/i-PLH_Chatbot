@@ -717,10 +717,198 @@ nlu:
     - Siapa yang saya perlu hubungi untuk pertanyaan mengenai Mendeley?
     - Bagaimana cara saya untuk hubungi masalah Mendeley?
 
+#Reference
+- intent: access_turnitin
+  examples: |
+    - How to access Turnitin?
+    - How can I access Turnitin?
+    - What is the way to access Turnitin?
+    - How do I access Turnitin?
 
+- intent: turnitin_akses
+  examples: |
+    - Bagaimana untuk akses Turnitin?
+    - Apa cara untuk akses Turnitin?
+    - Saya nak tahu cara untuk akses Turnitin.
+    - Macam mana nak akses Turnitin?
 
+#Review
+- intent: review_turnitin_instructor
+  examples: |
+    - How do instructor review Turnitin?
+    - How can instructor check Turnitin?
+    - What is the process for instructor to review Turnitin?
+    - How does an instructor review Turnitin?
 
+- intent: semakan_turnitin_pensyarah
+  examples: |
+    - Bagaimana cara untuk pensyarah membuat semakan Turnitin?
+    - Apa cara untuk pensyarah semak Turnitin?
+    - Macam mana pensyarah nak buat semakan Turnitin?
+    - Bagaimana pensyarah boleh buat semakan Turnitin?
 
+#Delete Turnitin
+- intent: delete_turnitin_project
+  examples: |
+    - How to 'Delete' a project or article in Turnitin?
+    - How do I delete a project in Turnitin?
+    - What is the process for deleting a project or article in Turnitin?
+    - How can I delete an article or project in Turnitin?
+
+- intent: padam_projek_turnitin
+  examples: |
+    - Bagaimana untuk 'Delete' projek atau artikel di dalam Turnitin?
+    - Macam mana nak padam projek atau artikel dalam Turnitin?
+    - Bagaimana cara nak 'Delete' projek atau artikel dalam Turnitin?
+    - Apa cara untuk hapuskan projek atau artikel dalam Turnitin?
+
+#Exam Paper
+- intent: get_exam_paper
+  examples: |
+    - How to get the Exam Paper?
+    - How can I access the exam paper?
+    - What is the process to get the exam paper?
+    - How do I retrieve the exam paper?
+
+- intent: dapatkan_kertas_peperiksaan
+  examples: |
+    - Macam mana hendak dapatkan Kertas Peperiksaan?
+    - Bagaimana cara nak dapatkan kertas peperiksaan?
+    - Apa langkah-langkah untuk dapatkan kertas peperiksaan?
+    - Macam mana nak cari kertas peperiksaan?
+
+#Reference Materials
+- intent: get_reference_materials
+  examples: |
+    - How to get reference materials in Laman Hikmah Library?
+    - How can I access reference materials in Laman Hikmah Library?
+    - Where can I find reference materials in the Laman Hikmah Library?
+    - How do I get access to reference materials in the Laman Hikmah Library?
+
+- intent: dapatkan_bahan_rujukan
+  examples: |
+    - Bagaimana untuk dapatkan bahan rujukan yang berada di Perpustakaan Laman Hikmah?
+    - Macam mana nak cari bahan rujukan di Perpustakaan Laman Hikmah?
+    - Apa cara untuk dapatkan bahan rujukan di Laman Hikmah?
+    - Macam mana nak akses bahan rujukan di Perpustakaan Laman Hikmah?
+
+#Manual Brochure
+- intent: get_guide_manual_brochure
+  examples: |
+    - Where can I get a guide manual brochure?
+    - How can I access a guide manual brochure?
+    - Where can I find a guide manual brochure?
+    - How do I get a guide manual brochure?
+
+- intent: dapatkan_manual_risalah
+  examples: |
+    - Dimana boleh dapatkan manual risalah PLH?
+    - Macam mana nak dapatkan manual risalah PLH?
+    - Di mana saya boleh cari manual risalah PLH?
+    - Mana tempat untuk dapatkan manual risalah PLH?
+
+#KOHA
+- intent: renew_materials_online_koha
+  examples: |
+    - How to renew materials online in the KOHA system?
+    - How can I renew materials online in KOHA?
+    - What are the steps to renew materials online in KOHA?
+    - How do I renew materials in the KOHA system?
+
+- intent: pembaharuan_bahan_online_koha
+  examples: |
+    - Bagaimana untuk membuat pembaharuan bahan secara dalam talian di dalam sistem KOHA?
+    - Macam mana nak buat pembaharuan bahan dalam talian dalam sistem KOHA?
+    - Apa cara untuk pembaharuan bahan dalam talian di sistem KOHA?
+    - Bagaimana nak renew bahan dalam sistem KOHA?
+
+#Publication Confirmation
+- intent: confirm_publication
+  examples: |
+    - How to confirm publication?
+    - How do I confirm a publication?
+    - What is the process to confirm a publication?
+    - How can I confirm my publication?
+
+- intent: pengesahan_penerbitan2
+  examples: |
+    - Bagaimana untuk membuat pengesahan penerbitan?
+    - Macam mana nak buat pengesahan penerbitan?
+    - Apa cara untuk pengesahan penerbitan?
+    - Bagaimana saya nak buat pengesahan penerbitan?
+
+#PSM
+- intent: search_psm_thesis
+  examples: |
+    - How to search Projek Sarjana Muda (PSM) /Thesis?
+    - How do I search for my Projek Sarjana Muda (PSM) /Thesis?
+    - Where can I search for Projek Sarjana Muda (PSM) or Thesis?
+    - What is the process to search for Projek Sarjana Muda (PSM) / Thesis?
+
+- intent: carian_psm_thesis
+  examples: |
+    - Bagaimana untuk mendapatkan Projek Sarjana Muda (PSM) /Thesis?
+    - Macam mana saya nak cari Projek Sarjana Muda (PSM) /Thesis?
+    - Di mana boleh cari Projek Sarjana Muda (PSM) /Thesis?
+    - Apa cara untuk mencari Projek Sarjana Muda (PSM) /Thesis?
+
+#E-Print
+- intent: access_full_article_eprints
+  examples: |
+    - How to access the full article on e-prints?
+    - How can I access the full article on e-prints?
+    - What is the way to access full articles on e-prints?
+    - How do I view the full article on e-prints?
+
+- intent: akses_artikel_penuh_eprints
+  examples: |
+    - Bagaimana untuk akses artikel penuh di e-prints?
+    - Apa cara untuk akses artikel penuh di e-prints?
+    - Macam mana saya nak akses artikel penuh di e-prints?
+    - Di mana saya boleh akses artikel penuh di e-prints?
+
+#Other Libary Reference
+- intent: get_reference_materials_other_universities
+  examples: |
+    - How to get reference materials available in other universities?
+    - How can I access reference materials in other universities?
+    - What is the way to get reference materials from other universities?
+    - How do I find reference materials from other universities?
+
+- intent: dapatkan_bahan_rujukan_universiti_lain
+  examples: |
+    - Macam mana untuk dapatkan bahan rujukan yang ada di universiti lain?
+    - Bagaimana cara untuk dapatkan bahan rujukan di universiti lain?
+    - Saya nak tahu cara untuk dapatkan bahan rujukan dari universiti lain.
+    - Di mana saya boleh dapatkan bahan rujukan yang ada di universiti lain?
+
+#EZ-Proxy
+- intent: access_ezproxy
+  examples: |
+    - How to access EZproxy?
+    - How can I access EZproxy from outside the campus?
+    - What is the guide to use EZproxy for accessing databases?
+    - How do I access EZproxy?
+
+- intent: akses_ezproxy
+  examples: |
+    - Macam mana cara untuk akses EZproxy?
+    - Bagaimana cara untuk menggunakan EZproxy di luar kampus?
+    - Apa panduan untuk akses EZproxy bagi menggunakan pangkalan data?
+    - Bagaimana untuk akses EZproxy?
+
+#Subscribed Databases
+- intent: find_subscribed_databases
+  examples: |
+    - How to find out the databases subscribed by Laman Hikmah Library?
+    - How can I know what databases are subscribed by the library?
+    - Where can I see the list of subscribed databases by Laman Hikmah Library?
+
+- intent: carian_pangkalan_data
+  examples: |
+    - Macam mana nak tahu pangkalan data yang dilanggan oleh Perpustakaan Laman Hikmah?
+    - Bagaimana saya boleh tahu pangkalan data yang dilanggan oleh perpustakaan?
+    - Di mana saya boleh lihat senarai pangkalan data yang dilanggan oleh Perpustakaan Laman Hikmah?
 
 
 - intent: ask_help

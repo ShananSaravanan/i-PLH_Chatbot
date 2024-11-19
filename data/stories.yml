@@ -544,16 +544,161 @@ stories:
 
 
 
-# #Reference
-# - story: reference
-#   steps:
-#   - intent: reference
-#   - action: utter_reference
+#Reference
+- story: reference
+  steps:
+  - intent: reference
+  - action: utter_reference
   
-# - story: rujukan
-#   steps:
-#   - intent: rujukan
-#   - action: utter_rujukan
+- story: rujukan
+  steps:
+  - intent: rujukan
+  - action: utter_rujukan
+
+#Access Turnitin
+- story: access_turnitin_story
+  steps: 
+    - intent: access_turnitin
+    - action: utter_access_turnitin
+
+- story: turnitin_akses_story
+  steps: 
+    - intent: turnitin_akses
+    - action: utter_turnitin_akses
+
+#Review
+- story: review_turnitin_instructor_story
+  steps:
+    - intent: review_turnitin_instructor
+    - action: utter_review_turnitin_instructor
+
+- story: semakan_turnitin_pensyarah_story
+  steps:
+    - intent: semakan_turnitin_pensyarah
+    - action: utter_semakan_turnitin_pensyarah
+
+#Delete
+- story: delete_project_turnitin_story
+  steps:
+    - intent: delete_turnitin_project
+    - action: utter_delete_project_turnitin
+
+- story: padam_projek_turnitin
+  steps:
+    - intent: padam_projek_turnitin
+    - action: utter_hapus_projek_turnitin
+
+#Exam Paper
+- story: get_exam_paper_story
+  steps:
+    - intent: get_exam_paper
+    - action: utter_get_exam_paper
+
+- story: dapatkan_kertas_peperiksaan_story
+  steps:
+    - intent: dapatkan_kertas_peperiksaan
+    - action: utter_dapatkan_kertas_peperiksaan
+
+#Reference Materials
+- story: get_reference_materials_story
+  steps:
+    - intent: get_reference_materials
+    - action: utter_get_reference_materials
+
+- story: dapatkan_bahan_rujukan_story
+  steps:
+    - intent: dapatkan_bahan_rujukan
+    - action: utter_dapatkan_bahan_rujukan
+
+#Guide Manual
+- story: get_guide_manual_brochure_story
+  steps:
+    - intent: get_guide_manual_brochure
+    - action: utter_get_guide_manual_brochure
+
+- story: dapatkan_manual_risalah_story
+  steps:
+    - intent: dapatkan_manual_risalah
+    - action: utter_dapatkan_manual_risalah
+
+#KOHA
+- story: renew_materials_online_koha_story
+  steps:
+    - intent: renew_materials_online_koha
+    - action: utter_renew_materials_online_koha
+
+- story: pembaharuan_bahan_online_koha_story
+  steps:
+    - intent: pembaharuan_bahan_online_koha
+    - action: utter_pembaharuan_bahan_online_koha
+
+#Publication Confirmation
+- story: confirm_publication_story
+  steps:
+    - intent: confirm_publication
+    - action: utter_confirm_publication
+
+- story: pengesahan_penerbitan_story
+  steps:
+    - intent: pengesahan_penerbitan2
+    - action: utter_pengesahan_penerbitan2
+
+#PSM
+- story: search_psm_thesis_story
+  steps:
+    - intent: search_psm_thesis
+    - action: utter_search_psm_thesis
+
+- story: carian_psm_thesis_story
+  steps:
+    - intent: carian_psm_thesis
+    - action: utter_carian_psm_thesis
+
+#E-Print
+- story: access_full_article_eprints_story
+  steps:
+    - intent: access_full_article_eprints
+    - action: utter_access_full_article_eprints
+
+- story: akses_artikel_penuh_eprints_story
+  steps:
+    - intent: akses_artikel_penuh_eprints
+    - action: utter_akses_artikel_penuh_eprints
+
+#Other Library
+- story: get_reference_materials_other_universities_story
+  steps:
+    - intent: get_reference_materials_other_universities
+    - action: utter_get_reference_materials_other_universities
+
+- story: dapatkan_bahan_rujukan_universiti_lain_story
+  steps:
+    - intent: dapatkan_bahan_rujukan_universiti_lain
+    - action: utter_dapatkan_bahan_rujukan_universiti_lain
+
+#Ez-Proxy
+- story: access_ezproxy_story
+  steps:
+    - intent: access_ezproxy
+    - action: utter_access_ezproxy
+
+- story: akses_ezproxy_story
+  steps:
+    - intent: akses_ezproxy
+    - action: utter_akses_ezproxy
+
+#Subscribed Databases
+- story: find_subscribed_databases_story
+  steps:
+    - intent: find_subscribed_databases
+    - action: utter_find_subscribed_databases
+
+- story: carian_pangkalan_data_story
+  steps:
+    - intent: carian_pangkalan_data
+    - action: utter_carian_pangkalan_data
+
+
 
 
 # - story: happy path

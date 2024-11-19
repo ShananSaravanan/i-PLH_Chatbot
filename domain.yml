@@ -106,7 +106,7 @@ intents:
 - research_consultation
 - research_support_programme
 - mendeley_en
-- pengesahan_penerbitan
+- pengesahan_penerbitan2
 - pengesahan_uris
 - pengesahan_jurnal
 - eppta_inquiry
@@ -114,6 +114,32 @@ intents:
 - perundingan_penyelidikan
 - program_sokongan_penyelidikan
 - mendeley_bm
+- access_turnitin
+- review_turnitin_instructor
+- delete_turnitin_project
+- get_exam_paper
+- get_reference_materials
+- get_guide_manual_brochure
+- renew_materials_online_koha
+- confirm_publication
+- search_psm_thesis
+- access_full_article_eprints
+- get_reference_materials_other_universities
+- access_ezproxy
+- find_subscribed_databases
+- turnitin_akses
+- semakan_turnitin_pensyarah
+- padam_projek_turnitin
+- dapatkan_kertas_peperiksaan
+- dapatkan_bahan_rujukan
+- dapatkan_manual_risalah
+- pembaharuan_bahan_online_koha
+- pengesahan_penerbitan
+- carian_psm_thesis
+- akses_artikel_penuh_eprints
+- dapatkan_bahan_rujukan_universiti_lain
+- akses_ezproxy
+- carian_pangkalan_data
 
 #entities:
 #- language
@@ -945,6 +971,119 @@ responses:
       - mawardi@utem.edu.my (06-2701213)
       - hasliza@utem.edu.my (06-2701215)
 
+#Reference
+  utter_reference:
+  - text:  What information about Reference would you like to know?
+    buttons:
+    - title: Turnitin Access
+      payload: /access_turnitin
+    - title: Turnitin Review
+      payload: /review_turnitin_instructor
+    - title: Delete Turnitin Project
+      payload: /delete_turnitin_project
+    - title: Exam Paper
+      payload: /get_exam_paper
+    - title: Reference Materials
+      payload: /get_reference_materials
+    - title: Guide Manual
+      payload: /get_guide_manual_brochure
+    - title: KOHA Material Renewal
+      payload: /renew_materials_online_koha
+    - title: Confirm Publication
+      payload: /confirm_publication
+    - title: Search PSM Thesis
+      payload: /search_psm_thesis
+    - title: Access E-Print Article
+      payload: /access_full_article_eprints
+    - title: Reference Material From Other Library
+      payload: /get_reference_materials_other_universities
+    - title: Ez Proxy 
+      payload: /access_ezproxy
+    - title: Subscribed Databases
+      payload: /find_subscribed_databases
+
+
+  utter_rujukan:
+  - text:  Apakah maklumat berkenaan dengan Rujukan yang sedang anda mencari?
+    buttons:
+    - title: Akses Turnitin
+      payload: /turnitin_akses
+    - title: Semak Turnitin
+      payload: /semakan_turnitin_pensyarah
+    - title: Padam Projek Turnitin
+      payload: /padam_projek_turnitin
+    - title: Kertas Peperiksaan
+      payload: /dapatkan_kertas_peperiksaan
+    - title: Bahan Rujukan
+      payload: /dapatkan_bahan_rujukan
+    - title: Manual Risalah
+      payload: /dapatkan_manual_risalah
+    - title: Pembaharuan Bahan Koha
+      payload: /pembaharuan_bahan_online_koha
+    - title: Pengesahan Penerbitan
+      payload: /pengesahan_penerbitan2
+    - title: Cari Thesis PSM
+      payload: /carian_psm_thesis
+    - title: Akses Artikel E-Print
+      payload: /akses_artikel_penuh_eprints
+    - title: Bahan Rujukan Universiti Lain
+      payload: /dapatkan_bahan_rujukan_universiti_lain
+    - title: Ez Proxy
+      payload: /akses_ezproxy
+    - title: Subkripsi Pangkalan Data
+      payload: /carian_pangkalan_data
+  
+#Access Turnitin
+  utter_access_turnitin:
+  - text: |
+      Be informed that Bachelor students need to deal with lecturers.
+      While for Graduate students, email their full name and student number
+      to zelina@utem.edu.my to get Class Id and Turnitin Key.
+
+  utter_turnitin_akses:
+  - text: |
+      Pelajar Sarjana Muda perlu berurusan dengan pensyarah.
+      Manakala bagi pelajar Lepasan Ijazah pula emelkan nama penuh dan
+      nombor pelajar kepada zelina@utem.edu.my untuk mendapatkan Class Id
+      dan Key Turnitin.
+
+#Review
+  utter_review_turnitin_instructor:
+  - text: |
+      For information, instructor need to enrol students to make a review.
+      Likewise, if the instructor wants to check the paper himself, instructor 
+      must also enrol as a student. Here is a guide to review.
+
+      https://turnitin.zoom.us/rec/share/7omOvbR5p7yWa70irJ13e6LRyiyTsdUgSpTaGAyCkuHKeDeRv72QaeO1LukozS1a.uAp3JrBbwaLpRU1L
+
+      Passcode: xz.jq73H
+
+  utter_semakan_turnitin_pensyarah:
+  - text: |
+      Untuk makluman, instructor perlu enroll students untuk membuat semakan.
+      Begitu juga sekiranya instructor ingin menyemak artikel sendiri perlu
+      juga enroll sebagai student. Berikut adalah panduan untuk membuat semakan.
+
+      https://turnitin.zoom.us/rec/share/7omOvbR5p7yWa70irJ13e6LRyiyTsdUgSpTaGAyCkuHKeDeRv72QaeO1LukozS1a.uAp3JrBbwaLpRU1L
+
+      Passcode: xz.jq73H
+
+#Delete
+  utter_delete_project_turnitin:
+  - text: |
+      Forwarded the link as a guide for the application to 'Delete' a project 
+      or article in Turnitin.
+      
+      https://help.turnitin.com/feedback-studio/turnitin-website/instructor/paper-deletions.htm#permanent-deletion
+
+  utter_hapus_projek_turnitin:
+  - text: |
+      Dimajukan link tersebut sebagai panduan untuk permohonan 'Delete' projek 
+      atau artikel di dalam Turnitin.
+      
+      https://help.turnitin.com/feedback-studio/turnitin-website/instructor/paper-deletions.htm#permanent-deletion
+
+
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
     image: https://i.imgur.com/nGF1K8f.jpg
@@ -958,6 +1097,165 @@ responses:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+
+#Exam Paper
+  utter_get_exam_paper:
+  - text: |
+      https://library.utem.edu.my/en/ ---> EZ-proxy ---> login ---> Exam paper 
+      (library lib*@utem)
+
+  utter_dapatkan_kertas_peperiksaan:
+  - text: |
+      https://library.utem.edu.my/en/ ---> EZ-proxy ---> login ---> Exam paper 
+      (library lib*@utem)
+
+#Reference Materials
+  utter_get_reference_materials:
+  - text: |
+      https://library.utem.edu.my/en/ ---> Online resources/OPAC
+
+  utter_dapatkan_bahan_rujukan:
+  - text: |
+      https://library.utem.edu.my/en/ ---> Online resources/OPAC
+
+#Manual
+  utter_get_guide_manual_brochure:
+  - text: |
+      https://library.utem.edu.my/en/guides/manuals-brochures.html#
+
+  utter_dapatkan_manual_risalah:
+  - text: |
+      https://library.utem.edu.my/en/guides/manuals-brochures.html#
+
+#KOHA
+  utter_renew_materials_online_koha:
+  - text: |
+      Steps to Renew Materials Online:
+      1. Go to the page (http://library.utem.edu.my/ms/)
+      2. Click Account Login (http://plh.utem.edu.my/) (Enter Staff/student No. and Password)
+      3. Click Your Summary
+      4. Tick in the Renew box
+      5. Click Renew Selected/ Renew all (if more than 1 item)
+      6. Check the latest date
+      7. Done
+      username: STAFF/STUDENT NUMBER
+      Password: Abc123 (If the password has not been changed)
+
+  utter_pembaharuan_bahan_online_koha:
+  - text: |
+      Langkah-langkah memperbaharui bahan dalam talian:
+      1. Pergi ke halaman (http://library.utem.edu.my/ms/)
+      2. Klik Account Login (http://plh.utem.edu.my/) (Masukkan No Staf/pelajar dan Password)
+      3. Klik Your Summary
+      4. Tick di Box Renew
+      5. Klik Renew Selected/ Renew all (jika lebih 1 bahan)
+      6. Semak tarikh terbaru
+      7. Selesai
+      username: NOMBOR STAF/PELAJAR
+      Password: Abc123 (Jika belum diubah password)
+
+#Publication Confirmation
+  utter_confirm_publication:
+  - text: |
+      For confirmation of publication, please email hasliza@utem.edu.my with a soft copy of the article (pdf) that needs confirmation.
+      Please respond also for the purpose of confirmation requested, is it for confirmation of publication of graduation, delivery of thesis hardbound or publication of Zamalah Grant? The verification process takes 3 working days.
+
+  utter_pengesahan_penerbitan2:
+  - text: |
+      Untuk pengesahan penerbitan, sila emel kepada hasliza@utem.edu.my beserta softcopy artikel (pdf) yang perlukan pengesahan.
+      Mohon maklumbalas juga tujuan pengesahan dimohon adakah untuk pengesahan penerbitan graduasi, penghantaran hardbound tesis atau penerbitan Geran Zamalah?
+      Proses pengesahan mengambil masa 3 hari bekerja.
+
+#PSM
+  utter_search_psm_thesis:
+  - text: |
+      To search for Projek Sarjana Muda (PSM) or Thesis, visit the following link: 
+      https://library.utem.edu.my/en/ and click on OPAC or Digital Collections.
+
+  utter_carian_psm_thesis:
+  - text: |
+      Untuk mencari Projek Sarjana Muda (PSM) atau Thesis, sila lawati pautan berikut: 
+      https://library.utem.edu.my/en/ dan klik pada OPAC atau Digital Collections.
+
+#E-Print
+  utter_access_full_article_eprints:
+  - text: |
+      To access the full article on e-prints, please note that UTeM's IR policy only allows ID/passwords to be given to academic staff due to copyright issues. Please email Mrs. Wizana Abd Jalil at wizana@utem.edu.my.
+
+      Searching and downloading articles with open access status and softcopy thesis for the first 24 pages can be done without logging in.
+
+      If you wish to view the full thesis, you will need to visit the Laman Hikmah Library at the Main Campus and make a reference to the material (hardcopy) at the Circulation counter.
+
+  utter_akses_artikel_penuh_eprints:
+  - text: |
+      Untuk mengakses artikel penuh di e-prints, sila maklum bahawa polisi IR UTeM hanya membenarkan ID/katalaluan diberikan kepada staf akademik sahaja disebabkan isu hakcipta. Sila emel kepada Puan Wizana Abd Jalil di wizana@utem.edu.my.
+
+      Pencarian dan memuat turun artikel dengan status open access dan softcopy tesis bagi 24 muka surat pertama boleh dilakukan tanpa log masuk.
+
+      Jika anda ingin paparan tesis penuh, sila hadir ke Perpustakaan Laman Hikmah Kampus Induk untuk membuat rujukan bahan (hardcopy) di kaunter Sirkulasi.
+
+#Other Libary
+  utter_get_reference_materials_other_universities:
+  - text: |
+      To get reference materials available in other universities, users can apply for Interlibrary Loan at the following link:
+      https://library.utem.edu.my/en/ ---> E-FORM ---> Inter Library Loan
+
+  utter_dapatkan_bahan_rujukan_universiti_lain:
+  - text: |
+      Untuk mendapatkan bahan rujukan yang ada di universiti lain, pengguna boleh membuat permohonan Pinjaman Antara Perpustakaan di pautan berikut:
+      https://library.utem.edu.my/en/ ---> E-FORM ---> Inter Library Loan
+
+#Ez-Proxy
+  utter_access_ezproxy:
+  - text: |
+      To access the database through EZproxy, follow the guide on the UTeM library website.
+      If you have trouble using EZproxy, you can try using VPN services. Here are the related guides:
+      
+      - VPN FAQ: https://library.utem.edu.my/en/guidelines/student-and-academic.html?download=310:vpn-faq
+      - VPN Android User Manual: https://library.utem.edu.my/en/guidelines/student-and-academic.html?download=311:vpn-manual-pengguna-android
+      - VPN MacOS User Manual: https://library.utem.edu.my/en/guidelines/student-and-academic.html?download=312:vpn-manual-pengguna-macos
+      - VPN iOS User Manual: https://library.utem.edu.my/en/guidelines/student-and-academic.html?download=313:vpn-manual-pengguna-ios
+      - VPN Windows User Manual: https://library.utem.edu.my/en/guidelines/student-and-academic.html?download=314:vpn-manual-penggunaan-windows
+      - VPN Slide: https://library.utem.edu.my/en/guidelines/student-and-academic.html?download=315:vpn-slide
+
+      Additional info: The VPN ID and password are the same as UTeM's wifi access.
+
+      For inquiries, you can contact Mr. Mohamad Rashid Bin Jantan at +606-2701218 or email him at mohamadrashid@utem.edu.my
+
+  utter_akses_ezproxy:
+  - text: |
+      Untuk akses pangkalan data melalui EZproxy, sila ikut panduan yang terdapat di laman Perpustakaan UTeM.
+      Sekiranya anda menghadapi masalah menggunakan EZproxy, anda boleh cuba menggunakan perkhidmatan VPN. Berikut adalah panduan berkaitan:
+      
+      - VPN FAQ: https://library.utem.edu.my/en/guidelines/student-and-academic.html?download=310:vpn-faq
+      - VPN Manual Pengguna Android: https://library.utem.edu.my/en/guidelines/student-and-academic.html?download=311:vpn-manual-pengguna-android
+      - VPN Manual Pengguna MacOS: https://library.utem.edu.my/en/guidelines/student-and-academic.html?download=312:vpn-manual-pengguna-macos
+      - VPN Manual Pengguna iOS: https://library.utem.edu.my/en/guidelines/student-and-academic.html?download=313:vpn-manual-pengguna-ios
+      - VPN Manual Penggunaan Windows: https://library.utem.edu.my/en/guidelines/student-and-academic.html?download=314:vpn-manual-penggunaan-windows
+      - VPN Slide: https://library.utem.edu.my/en/guidelines/student-and-academic.html?download=315:vpn-slide
+
+      Maklumat tambahan: ID dan kata laluan VPN adalah sama dengan akses wifi UTeM.
+
+      Sebarang pertanyaan boleh hubungi En. Mohamad Rashid Bin Jantan di +606-2701218 atau emel beliau di mohamadrashid@utem.edu.my
+
+#Subscribed Databases
+  utter_find_subscribed_databases:
+  - text: |
+      You can view the list of databases subscribed by Laman Hikmah Library at the following link:
+      [List of Subscribed Databases](https://library.utem.edu.my/ms/pangkalan-data.html)
+      
+      If the database cannot be accessed in full text, it means that PLH has not made a subscription. In such cases, you can make an Inter Library Loan (ILL) request using this link:
+      [Inter Library Loan (ILL)](https://library.utem.edu.my/en/ ---> E-FORM ---> Inter Library Loan)
+
+  utter_carian_pangkalan_data:
+  - text: |
+      Anda boleh melihat senarai pangkalan data yang dilanggan oleh Perpustakaan Laman Hikmah di pautan berikut:
+      [Senarai Pangkalan Data Dilanggan](https://library.utem.edu.my/ms/pangkalan-data.html)
+      
+      Jika pangkalan data tersebut tidak dapat diakses dalam bentuk teks penuh, ini bermakna PLH tidak membuat langganan. Dalam kes ini, anda boleh membuat permohonan Pinjaman Antara Perpustakaan (ILL) di pautan berikut:
+      [Pinjaman Antara Perpustakaan (ILL)](https://library.utem.edu.my/en/ ---> E-FORM ---> Inter Library Loan)
+
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
