@@ -1,4 +1,2 @@
-import sys
-print(sys.version)
 rasa==3.6.20
 rasa-sdk==3.5.10
