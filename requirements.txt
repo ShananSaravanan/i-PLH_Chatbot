@@ -1,6 +1,6 @@
 setuptools>=42
 wheel>=0.38.1
-fire==0.4.0
+fire==0.2.0
 absl-py==1.4.0
 aio-pika==8.2.3
 aiofiles==24.1.0
