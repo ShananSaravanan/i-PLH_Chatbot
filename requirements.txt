@@ -1,3 +1,5 @@
 rasa==3.6.20
 rasa-sdk==3.6.2
 fire==0.7.0
+numpy<1.24,>=1.22
+tensorflow<2.13,>=2.12
