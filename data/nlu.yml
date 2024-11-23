@@ -277,6 +277,7 @@ nlu:
 
 - intent: loan_material_lost
   examples: |
+    - I lost my book.
     - What if I lose the book I borrowed?
     - Process for lost loaned books?
     - I lost the book I borrowed.

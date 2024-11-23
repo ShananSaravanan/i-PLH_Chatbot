@@ -9,6 +9,7 @@
             window.WebChat.default(
                 {
                     customData: { language: "en" },
+                    initPayload: "/greet",
                     socketUrl: "https://i-plhchatbot-production.up.railway.app",  // Use your Rasa server URL
                     socketPath: "/socket.io/",           // Ensure the path matches your Rasa setup
                     onMessage: (message) => {

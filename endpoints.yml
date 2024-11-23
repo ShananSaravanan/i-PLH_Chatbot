@@ -45,3 +45,8 @@ socketio:
   bot_message_evt: bot_uttered
   cors_allowed_origins: "*"
 
+action_endpoint:
+  url: "https://i-plhchatbot-production.up.railway.app/webhook"
+  cors: "*"
+
+
