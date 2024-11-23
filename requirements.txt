@@ -79,7 +79,7 @@ msgpack==1.1.0
 multidict==5.2.0
 murmurhash==1.0.10
 networkx==2.6.3
-numpy>=2.0.0,<3.0.0
+numpy
 oauthlib==3.2.2
 opt_einsum==3.4.0
 packaging==20.9
