@@ -139,7 +139,7 @@ six==1.16.0
 sklearn-crfsuite==0.3.6
 slack_sdk==3.33.3
 smart-open==7.0.5
-spacy==3.8.2
+spacy==3.7.5
 spacy-legacy==3.0.12
 spacy-loggers==1.0.5
 SQLAlchemy==1.4.54
