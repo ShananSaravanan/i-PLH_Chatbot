@@ -40,3 +40,8 @@
 #  username: username
 #  password: password
 #  queue: queue
+socketio:
+  user_message_evt: user_uttered
+  bot_message_evt: bot_uttered
+  cors_allowed_origins: "*"
+

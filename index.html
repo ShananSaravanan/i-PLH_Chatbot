@@ -1,25 +1,24 @@
 <script>
     !(function () {
-      let e = document.createElement("script"),
-        t = document.head || document.getElementsByTagName("head")[0];
-      (e.src =
-        "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.0/lib/index.js"),
+        let e = document.createElement("script"),
+            t = document.head || document.getElementsByTagName("head")[0];
+        (e.src = "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
         (e.async = !0),
         (e.onload = () => {
-          window.WebChat.default(
-            {
-              initPayload: "/get_started", 
-              customData: { language: "en" }, 
-              socketUrl: "http://localhost:5005", // Ensure this matches your Rasa server URL
-              socketPath: "/socket.io/", 
-              title: "Chatbot", 
-              subtitle: "How can I help you?", 
-              embedded: true 
-            },
-            null
-          );
+            console.log("Rasa Webchat script loaded successfully."); // Log to confirm script is loaded
+            window.WebChat.default(
+                {
+                    customData: { language: "en" },
+                    socketUrl: "https://i-plhchatbot-production.up.railway.app",  // Use your Rasa server URL
+                    socketPath: "/socket.io/",           // Ensure the path matches your Rasa setup
+                    onMessage: (message) => {
+                        console.log("Webchat received message:", message);  // Log received message
+                    },
+                },
+                null
+            );
         }),
         t.insertBefore(e, t.firstChild);
     })();
-    </script>
-    
+  </script>
+  
