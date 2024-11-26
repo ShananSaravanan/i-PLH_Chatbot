@@ -183,6 +183,6 @@ dependencies = [
     "websockets==14.0",
     "Werkzeug==3.0.1",
     "wrapt==1.14.1",
-    "yarl==1.14.4",
+    "yarl==1.15.5",
     "zict==3.0.0",
 ]
