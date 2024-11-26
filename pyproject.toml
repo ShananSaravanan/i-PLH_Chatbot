@@ -180,7 +180,7 @@ dependencies = [
     "urllib3==2.2.3",
     "wasabi==1.2.1",
     "wcwidth==0.2.5",
-    "websockets==11.0.5",
+    "websockets==14.0",
     "Werkzeug==3.0.1",
     "wrapt==1.14.1",
     "yarl==1.10.4",
