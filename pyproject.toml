@@ -2,18 +2,12 @@
 requires = ["setuptools", "wheel", "build"]
 build-backend = "setuptools.build_meta"
 
-[project]
-name = "i-PLH_Chatbot"
-version = "0.1.0"
-description = "A brief description of your project."
-authors = [{ name = "Your Name", email = "your.email@example.com" }]
-license = { file = "LICENSE" }
 
 dependencies = [
     "rasa==3.6.20",
     "rasa-sdk==3.6.2",
     "aiohttp==3.9.5",
-    "fire==0.3.0",
+    "fire==0.2.0",
     "coloredlogs>=10.0.0,<16.0.0",
     "python-socketio>=5.11.4,<6.0.0",
     "websockets>=10.4,<11.0.0",
