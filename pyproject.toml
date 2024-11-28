@@ -21,5 +21,6 @@ pytest = "^7.4.0"  # For testing
 black = "^23.7.0"  # Code formatting
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.0.0", "setuptools>=42", "wheel", "build"]
 build-backend = "poetry.core.masonry.api"
+
