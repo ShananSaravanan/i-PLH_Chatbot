@@ -1,26 +1,21 @@
-[tool.poetry]
-name = "rasa_project"
-version = "0.1.0"
-description = "A minimal Rasa project"
-authors = ["Your Name <youremail@example.com>"]
-
-[tool.poetry.dependencies]
-python = ">=3.8,<3.11"  # Compatible Python version
-rasa = "^3.6.20"  # Rasa core dependency
-rasa-sdk = "^3.6.2"  # Rasa SDK for custom actions
-aiohttp = ">=3.9.5,<4.0.0"  # Core HTTP dependency
-coloredlogs = ">=10.0.0,<16.0.0"  # For enhanced logging
-python-socketio = ">=5.11.4,<6.0.0"  # Real-time communication
-websockets = ">=10.4,<11.0.0"  # WebSocket protocol support
-
-# Optional but recommended dependencies
-questionary = ">=1.10.0,<1.11.0"  # CLI interaction prompts
-
-[tool.poetry.dev-dependencies]
-pytest = "^7.4.0"  # For testing
-black = "^23.7.0"  # Code formatting
-
 [build-system]
-requires = ["poetry-core>=1.0.0", "setuptools>=42", "wheel", "build"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools>=42", "wheel", "build"]
+build-backend = "setuptools.build_meta"
 
+[project]
+name = "i-PLH_Chatbot"
+version = "0.1.0"
+description = "A brief description of your project."
+authors = [{ name = "Your Name", email = "your.email@example.com" }]
+license = { file = "LICENSE" }
+dependencies = [
+"rasa ==3.6.20",  # Rasa core dependency
+"rasa-sdk ==3.6.2,  # Rasa SDK for custom actions
+"aiohttp ===3.9.5",  # Core HTTP dependency
+"coloredlogs>=10.0.0,<16.0.0",  # For enhanced logging
+"python-socketio>=5.11.4,<6.0.0",  # Real-time communication
+"websockets>=10.4,<11.0.0",  # WebSocket protocol support
+# Optional but recommended dependencies
+"questionary>=1.10.0,<1.11.0"  # CLI interaction prompts
+    
+]
