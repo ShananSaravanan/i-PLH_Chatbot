@@ -8,14 +8,13 @@ version = "0.1.0"
 description = "A brief description of your project."
 authors = [{ name = "Your Name", email = "your.email@example.com" }]
 license = { file = "LICENSE" }
+
 dependencies = [
-"rasa ==3.6.20",  # Rasa core dependency
-"rasa-sdk ==3.6.2,  # Rasa SDK for custom actions
-"aiohttp ===3.9.5",  # Core HTTP dependency
-"coloredlogs>=10.0.0,<16.0.0",  # For enhanced logging
-"python-socketio>=5.11.4,<6.0.0",  # Real-time communication
-"websockets>=10.4,<11.0.0",  # WebSocket protocol support
-# Optional but recommended dependencies
-"questionary>=1.10.0,<1.11.0"  # CLI interaction prompts
-    
+    "rasa==3.6.20",
+    "rasa-sdk==3.6.2",
+    "aiohttp==3.9.5",
+    "coloredlogs>=10.0.0,<16.0.0",
+    "python-socketio>=5.11.4,<6.0.0",
+    "websockets>=10.4,<11.0.0",
+    "questionary>=1.10.0,<1.11.0"
 ]
