@@ -15,10 +15,7 @@
                     onMessage: (message) => {
                         console.log("Webchat received message:", message);  // Log received message
                     },
-                    // Add custom headers to skip ngrok warning page
-                    socketHeaders: {
-                        'ngrok-skip-browser-warning': 'true'  // Skip the warning page
-                    },
+                    
                 },
                 null
             );
