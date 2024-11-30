@@ -1,1 +1,1 @@
-web: rasa run --cors "*" --enable-api
+web: sleep 10 && rasa run --cors "*" --enable-api
