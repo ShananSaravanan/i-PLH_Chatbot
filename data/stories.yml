@@ -7,16 +7,37 @@ stories:
   - intent: greet
   - action: utter_ask_language
 
-#Language
-- story: user chooses bahasa melayu
-  steps:
-  - intent: choose_lang_bm
-  - action: utter_selected_bm
-  
-- story: user chooses english
+- story: Show General Info
   steps:
   - intent: choose_lang_en
   - action: utter_selected_en
+
+- story: Show General Info
+  steps:
+  - intent: choose_lang_bm
+  - action: utter_selected_bm
+
+# #Name
+# - story: user chooses bahasa melayu
+#   steps:
+#   - intent: choose_lang_en
+#   - action: utter_ask_name  # Ask for the user's name in English
+#   - action: name_form       # Trigger the form
+#   - active_loop: name_form  # Keep the form active until the name is captured
+#   - action: action_submit_form  # Submit form after name is captured
+#   - active_loop: null        # End the active loop
+#   - action: utter_selected_en  # Send confirmation messagm
+
+# - story: user chooses english
+#   steps:
+#   - intent: choose_lang_bm
+#   - action: utter_tanya_nama  # Ask for the user's name in Bahasa Melayu
+#   - action: name_form         # Trigger the form
+#   - active_loop: name_form    # Keep the form active until the name is captured
+#   - action: action_submit_form  # Submit form after name is captured
+#   - active_loop: null        # End the active loop
+#   - action: utter_selected_bm  # Send confirmation message
+
 
 #First Categories
 #General

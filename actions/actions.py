@@ -25,4 +25,21 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
+# from rasa_sdk import Action
+# from rasa_sdk.events import SlotSet
+
+# class ActionSubmitForm(Action):
+#     def name(self) -> str:
+#         return "action_submit_form"
+
+#     def run(self, dispatcher, tracker, domain):
+#         user_name = tracker.get_slot("name")
+#         # Debugging line to check slot value
+#         print(f"User's name is: {user_name}")
+#         dispatcher.utter_message(text=f"Thanks, {user_name}!")
+#         return [SlotSet("name", user_name)]
+
+
+
+
 

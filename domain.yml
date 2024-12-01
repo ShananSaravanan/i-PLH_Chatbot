@@ -140,6 +140,9 @@ intents:
 - dapatkan_bahan_rujukan_universiti_lain
 - akses_ezproxy
 - carian_pangkalan_data
+- nlu_fallback
+- name_en
+- nama_bm
 
 #entities:
 #- language
@@ -150,6 +153,26 @@ intents:
 #     mappings:
 #       - type: from_entity
 #         entity: language
+# slots:
+#   name:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#     - type: from_text
+#       intent: name_en  # When the user gives their name in Bahasa Melayu
+#     - type: from_text
+#       intent: nama_bm  # When the user gives their name in Bahasa Melayu
+
+# forms:
+#   name_form:
+#     required_slots:
+#       - name
+
+
+
+# actions:
+#   - action_submit_form
+
 responses:
   
   utter_ask_language:
@@ -160,8 +183,16 @@ responses:
     - title: "English"
       payload: '/choose_lang_en'
 
+  utter_ask_name:
+  - text: "What is your name?"
+
+
+  utter_tanya_nama:
+  - text: "Siapakah nama anda?"
+
+
   utter_selected_bm:
-  - text: "Anda telah memilih Bahasa Melayu. Bagaimana saya boleh membantu?"
+  - text: "Bagaimana saya boleh membantu {name}?"
     buttons:
     - title: "Maklumat umum"
       payload: '/maklumat_umum'
@@ -171,7 +202,7 @@ responses:
       payload: '/rujukan'
 
   utter_selected_en:
-  - text: "You have selected English. How can I assist you?"
+  - text: "How can I assist you {name}?"
     buttons:
     - title: "General information"
       payload: '/general_info'
@@ -1255,6 +1286,12 @@ responses:
       Jika pangkalan data tersebut tidak dapat diakses dalam bentuk teks penuh, ini bermakna PLH tidak membuat langganan. Dalam kes ini, anda boleh membuat permohonan Pinjaman Antara Perpustakaan (ILL) di pautan berikut:
       [Pinjaman Antara Perpustakaan (ILL)](https://library.utem.edu.my/en/ ---> E-FORM ---> Inter Library Loan)
 
+#Fallback
+  utter_default_en:
+  - text: "Sorry, I didn't quite get that. Could you rephrase?"
+
+  utter_default_ms:
+  - text: "Maaf, saya tidak faham. Boleh cuba dengan cara lain?"
 
 session_config:
   session_expiration_time: 60

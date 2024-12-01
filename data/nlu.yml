@@ -34,6 +34,24 @@ nlu:
     - english 
     - in english
 
+#  #Name
+# - intent: name_en
+#   examples: |
+#     - My name is John
+#     - I am Alice
+#     - The name is Mark
+#     - Mark
+#     - Jacob
+
+# - intent: nama_bm
+#   examples: |
+#     - Nama saya Ali
+#     - Saya bernama Siti
+#     - Nama saya Faiz
+#     - Faiz
+#     - Ali
+#     - Saya Ali
+  
 # Important Categories - 2
 
 #General info
@@ -159,6 +177,8 @@ nlu:
     - return loan
     - return book
     - borrow
+    - I want to borrow
+    - I need books
     - return
     - book loan
     - loan book
@@ -167,6 +187,7 @@ nlu:
     - pulang buku
     - buku pulang
     - pinjam buku
+    - saya ingin meminjam buku
     - buku meminjam
     - pulang
     - pinjam

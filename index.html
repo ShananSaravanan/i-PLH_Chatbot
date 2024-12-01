@@ -10,7 +10,7 @@
                 {
                     customData: { language: "en" },
                     initPayload: "/greet",
-                    socketUrl: "https://i-plh-chatbot.onrender.com",  // Use your Rasa server URL
+                    socketUrl: "http://localhost:5005",  // Use your Rasa server URL
                     socketPath: "/socket.io/",           // Ensure the path matches your Rasa setup
                     onMessage: (message) => {
                         console.log("Webchat received message:", message);  // Log received message
