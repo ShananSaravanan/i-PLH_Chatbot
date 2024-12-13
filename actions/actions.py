@@ -40,6 +40,37 @@
 #         return [SlotSet("name", user_name)]
 
 
+# from rasa_sdk import Action
+# from rasa_sdk.events import ReminderScheduled, AllSlotsReset
+# import datetime
+
+# class ActionCheckInactivity(Action):
+#     def name(self) -> str:
+#         return "action_check_inactivity"
+
+#     def run(self, dispatcher, tracker, domain):
+#         # Schedule a reminder for inactivity after 30 seconds
+#         reminder_time = datetime.datetime.now() + datetime.timedelta(seconds=10)
+#         reminder = ReminderScheduled(
+#             intent_name="trigger_inactivity",
+#             trigger_date_time=reminder_time,
+#             name="inactivity_reminder",
+#             kill_on_user_message=True  # Automatically cancel the reminder if the user responds
+#         )
+#         return [reminder]
+
+# from rasa_sdk import Action
+# from rasa_sdk.events import AllSlotsReset
+
+# class ActionEndConversationOnInactivity(Action):
+#     def name(self) -> str:
+#         return "action_end_conversation_on_inactivity"
+
+#     def run(self, dispatcher, tracker, domain):
+#         dispatcher.utter_message(text="It seems you're busy. I'll end the conversation now. Goodbye!")
+#         return [AllSlotsReset()]
+
+
 
 
 

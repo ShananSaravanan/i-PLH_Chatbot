@@ -6,7 +6,6 @@ stories:
   steps:
   - intent: greet
   - action: utter_ask_language
-
 - story: Show General Info
   steps:
   - intent: choose_lang_en

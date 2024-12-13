@@ -1,15 +1,15 @@
 version: '3.1'
 intents:
-- affirm
-- ask_help
-- bot_challenge
+# - affirm
+# - ask_help
+# - bot_challenge
 - choose_lang_bm
 - choose_lang_en
-- deny
+# - deny
 - goodbye
 - greet
-- mood_great
-- mood_unhappy
+# - mood_great
+# - mood_unhappy
 - maklumat_umum
 - penyelidikan
 - rujukan
@@ -141,8 +141,14 @@ intents:
 - akses_ezproxy
 - carian_pangkalan_data
 - nlu_fallback
-- name_en
-- nama_bm
+# - name_en
+# - nama_bm
+# - trigger_inactivity
+
+actions:
+  - utter_goodbye
+# - action_check_inactivity
+# - action_end_conversation_on_inactivity
 
 #entities:
 #- language
@@ -183,16 +189,18 @@ responses:
     - title: "English"
       payload: '/choose_lang_en'
 
-  utter_ask_name:
-  - text: "What is your name?"
+  # utter_ask_name:
+  # - text: "What is your name?"
 
 
-  utter_tanya_nama:
-  - text: "Siapakah nama anda?"
+  # utter_tanya_nama:
+  # - text: "Siapakah nama anda?"
+
+
 
 
   utter_selected_bm:
-  - text: "Bagaimana saya boleh membantu {name}?"
+  - text: "Bagaimana saya boleh membantu?" #{name}
     buttons:
     - title: "Maklumat umum"
       payload: '/maklumat_umum'
@@ -202,7 +210,7 @@ responses:
       payload: '/rujukan'
 
   utter_selected_en:
-  - text: "How can I assist you {name}?"
+  - text: "How can I assist you?" #{name}
     buttons:
     - title: "General information"
       payload: '/general_info'
@@ -1115,19 +1123,23 @@ responses:
       https://help.turnitin.com/feedback-studio/turnitin-website/instructor/paper-deletions.htm#permanent-deletion
 
 
-  utter_cheer_up:
-  - text: 'Here is something to cheer you up:'
-    image: https://i.imgur.com/nGF1K8f.jpg
-  utter_ask_help:
-  - text: How can I assist you today?
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
+  # utter_cheer_up:
+  # - text: 'Here is something to cheer you up:'
+  #   image: https://i.imgur.com/nGF1K8f.jpg
+  # utter_ask_help:
+  # - text: How can I assist you today?
+  # utter_did_that_help:
+  # - text: Did that help you?
+  # utter_happy:
+  # - text: Great, carry on!
   utter_goodbye:
-  - text: Bye
-  utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+  - text: |
+      Feel free to ask help from me at anytime, goodbye for now!
+      Jangan ragu untuk mendapatkan bantuan dari saya bila-bila masa, selamat tinggal untuk sekarang!
+
+
+  # utter_iamabot:
+  # - text: I am a bot, powered by Rasa.
 
 #Exam Paper
   utter_get_exam_paper:
